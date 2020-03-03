@@ -1,0 +1,17 @@
+{
+    "title": "D2 Query Invalid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_avg": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_shotname"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

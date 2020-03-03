@@ -1,0 +1,6762 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "min"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "APPLY": [
+                {
+                    "min": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "zool",
+            "min": 91.67
+        },
+        {
+            "courses_dept": "zool",
+            "min": 92
+        },
+        {
+            "courses_dept": "zool",
+            "min": 92.71
+        },
+        {
+            "courses_dept": "zool",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "zool",
+            "min": 92.1
+        },
+        {
+            "courses_dept": "zool",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 92.41
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 92.32
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 95.2
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 91.1
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.73
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 93.05
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 92.15
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "surg",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "surg",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "surg",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "surg",
+            "min": 94.25
+        },
+        {
+            "courses_dept": "surg",
+            "min": 90.13
+        },
+        {
+            "courses_dept": "surg",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "stat",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "stat",
+            "min": 91.73
+        },
+        {
+            "courses_dept": "stat",
+            "min": 94.7
+        },
+        {
+            "courses_dept": "stat",
+            "min": 90.9
+        },
+        {
+            "courses_dept": "stat",
+            "min": 92
+        },
+        {
+            "courses_dept": "stat",
+            "min": 93
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.36
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.55
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.94
+        },
+        {
+            "courses_dept": "spph",
+            "min": 95.09
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.45
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.86
+        },
+        {
+            "courses_dept": "spph",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.58
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93
+        },
+        {
+            "courses_dept": "spph",
+            "min": 94.1
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.92
+        },
+        {
+            "courses_dept": "spph",
+            "min": 94.38
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.14
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.39
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.73
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.54
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.68
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.31
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.81
+        },
+        {
+            "courses_dept": "spph",
+            "min": 94.36
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.64
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.14
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.77
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.78
+        },
+        {
+            "courses_dept": "spph",
+            "min": 95.75
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.63
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.83
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.73
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.71
+        },
+        {
+            "courses_dept": "spph",
+            "min": 96.8
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.33
+        },
+        {
+            "courses_dept": "spph",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.99
+        },
+        {
+            "courses_dept": "spph",
+            "min": 95.11
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.38
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "spph",
+            "min": 94.09
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.08
+        },
+        {
+            "courses_dept": "spph",
+            "min": 98.98
+        },
+        {
+            "courses_dept": "spph",
+            "min": 95.76
+        },
+        {
+            "courses_dept": "spph",
+            "min": 93.89
+        },
+        {
+            "courses_dept": "spph",
+            "min": 96.96
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.47
+        },
+        {
+            "courses_dept": "spph",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "spph",
+            "min": 90.84
+        },
+        {
+            "courses_dept": "span",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "span",
+            "min": 93.25
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.65
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 93.82
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.84
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 92.08
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 92.09
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.74
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 96.09
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 92.88
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 91
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 94.56
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 93.4
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 96.15
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 95.93
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.89
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.09
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.62
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.13
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 91.82
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.49
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.66
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 92.23
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 90.87
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 95
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 94.33
+        },
+        {
+            "courses_dept": "soil",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "soil",
+            "min": 91.43
+        },
+        {
+            "courses_dept": "sans",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "sans",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "russ",
+            "min": 92.3
+        },
+        {
+            "courses_dept": "russ",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "russ",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "rsot",
+            "min": 91.7
+        },
+        {
+            "courses_dept": "rsot",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91.92
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91.27
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 95
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 91.44
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 94
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.77
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 97
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 93.25
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 95.25
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.38
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.83
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 93.75
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 95.75
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 94.75
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.65
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 95
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 94.2
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 96
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 92
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.1
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "plan",
+            "min": 94.58
+        },
+        {
+            "courses_dept": "plan",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "plan",
+            "min": 96.47
+        },
+        {
+            "courses_dept": "plan",
+            "min": 93
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.08
+        },
+        {
+            "courses_dept": "plan",
+            "min": 91.28
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.85
+        },
+        {
+            "courses_dept": "plan",
+            "min": 92.9
+        },
+        {
+            "courses_dept": "plan",
+            "min": 93.12
+        },
+        {
+            "courses_dept": "plan",
+            "min": 92.38
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.23
+        },
+        {
+            "courses_dept": "plan",
+            "min": 92.73
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.35
+        },
+        {
+            "courses_dept": "plan",
+            "min": 93.94
+        },
+        {
+            "courses_dept": "plan",
+            "min": 92.07
+        },
+        {
+            "courses_dept": "plan",
+            "min": 91.09
+        },
+        {
+            "courses_dept": "plan",
+            "min": 90.93
+        },
+        {
+            "courses_dept": "plan",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "plan",
+            "min": 92.08
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.94
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.19
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "phys",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.85
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.7
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.55
+        },
+        {
+            "courses_dept": "phys",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "phys",
+            "min": 94.7
+        },
+        {
+            "courses_dept": "phys",
+            "min": 95.43
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "phys",
+            "min": 92.58
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.42
+        },
+        {
+            "courses_dept": "phys",
+            "min": 93.31
+        },
+        {
+            "courses_dept": "phys",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "phys",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "phth",
+            "min": 94.32
+        },
+        {
+            "courses_dept": "phth",
+            "min": 90.61
+        },
+        {
+            "courses_dept": "phth",
+            "min": 90.03
+        },
+        {
+            "courses_dept": "phth",
+            "min": 90.35
+        },
+        {
+            "courses_dept": "phth",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "phth",
+            "min": 90.99
+        },
+        {
+            "courses_dept": "phth",
+            "min": 95.37
+        },
+        {
+            "courses_dept": "phth",
+            "min": 92.04
+        },
+        {
+            "courses_dept": "phrm",
+            "min": 94.23
+        },
+        {
+            "courses_dept": "phrm",
+            "min": 92.06
+        },
+        {
+            "courses_dept": "phil",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "phil",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "phil",
+            "min": 96
+        },
+        {
+            "courses_dept": "phil",
+            "min": 91
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.55
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.02
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.02
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.09
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.26
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.88
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.61
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.19
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.57
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.07
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.24
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.15
+        },
+        {
+            "courses_dept": "phar",
+            "min": 92.28
+        },
+        {
+            "courses_dept": "phar",
+            "min": 94.87
+        },
+        {
+            "courses_dept": "phar",
+            "min": 94.54
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "phar",
+            "min": 92.39
+        },
+        {
+            "courses_dept": "phar",
+            "min": 92.66
+        },
+        {
+            "courses_dept": "phar",
+            "min": 92.46
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.95
+        },
+        {
+            "courses_dept": "phar",
+            "min": 92.85
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.63
+        },
+        {
+            "courses_dept": "phar",
+            "min": 91.16
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "phar",
+            "min": 90.26
+        },
+        {
+            "courses_dept": "phar",
+            "min": 93
+        },
+        {
+            "courses_dept": "phar",
+            "min": 95.07
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 92
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 93
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 90.93
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 96
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 91.22
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "path",
+            "min": 92.25
+        },
+        {
+            "courses_dept": "path",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.79
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.55
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.91
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.83
+        },
+        {
+            "courses_dept": "path",
+            "min": 93
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.27
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.1
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.78
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.06
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.31
+        },
+        {
+            "courses_dept": "path",
+            "min": 91
+        },
+        {
+            "courses_dept": "path",
+            "min": 92.58
+        },
+        {
+            "courses_dept": "path",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "path",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "onco",
+            "min": 90.58
+        },
+        {
+            "courses_dept": "onco",
+            "min": 92.61
+        },
+        {
+            "courses_dept": "onco",
+            "min": 93.07
+        },
+        {
+            "courses_dept": "onco",
+            "min": 91.74
+        },
+        {
+            "courses_dept": "onco",
+            "min": 90.82
+        },
+        {
+            "courses_dept": "onco",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "obst",
+            "min": 91
+        },
+        {
+            "courses_dept": "obst",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "obst",
+            "min": 95
+        },
+        {
+            "courses_dept": "obst",
+            "min": 93
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 96.73
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.19
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.92
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.29
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 92.17
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 93.07
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.47
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 98.58
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 98.5
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 97.53
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 96.64
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.85
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 93.86
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.92
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.42
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.81
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.63
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.91
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 93.4
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 97.33
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.56
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.93
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.21
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 95.43
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 95.29
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 95.13
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 98.21
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 92.69
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.36
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 98.71
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.47
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 90.65
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 95
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 93.41
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 93.36
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 92.64
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.83
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 92.62
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.15
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "nrsc",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "name",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "name",
+            "min": 91.57
+        },
+        {
+            "courses_dept": "musc",
+            "min": 91
+        },
+        {
+            "courses_dept": "musc",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "musc",
+            "min": 94
+        },
+        {
+            "courses_dept": "musc",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "musc",
+            "min": 96.5
+        },
+        {
+            "courses_dept": "musc",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "musc",
+            "min": 93.75
+        },
+        {
+            "courses_dept": "musc",
+            "min": 95
+        },
+        {
+            "courses_dept": "musc",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "musc",
+            "min": 90.08
+        },
+        {
+            "courses_dept": "musc",
+            "min": 93.33
+        },
+        {
+            "courses_dept": "musc",
+            "min": 92
+        },
+        {
+            "courses_dept": "musc",
+            "min": 92.47
+        },
+        {
+            "courses_dept": "musc",
+            "min": 95.67
+        },
+        {
+            "courses_dept": "musc",
+            "min": 95.38
+        },
+        {
+            "courses_dept": "musc",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "musc",
+            "min": 93.45
+        },
+        {
+            "courses_dept": "musc",
+            "min": 92.63
+        },
+        {
+            "courses_dept": "musc",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "musc",
+            "min": 90.8
+        },
+        {
+            "courses_dept": "musc",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "musc",
+            "min": 90.19
+        },
+        {
+            "courses_dept": "musc",
+            "min": 93.06
+        },
+        {
+            "courses_dept": "musc",
+            "min": 93.35
+        },
+        {
+            "courses_dept": "musc",
+            "min": 94.25
+        },
+        {
+            "courses_dept": "musc",
+            "min": 93
+        },
+        {
+            "courses_dept": "mtrl",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "mtrl",
+            "min": 95
+        },
+        {
+            "courses_dept": "mtrl",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "mtrl",
+            "min": 92.89
+        },
+        {
+            "courses_dept": "mtrl",
+            "min": 96.25
+        },
+        {
+            "courses_dept": "mine",
+            "min": 91
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "mine",
+            "min": 93
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.69
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.52
+        },
+        {
+            "courses_dept": "mine",
+            "min": 95.44
+        },
+        {
+            "courses_dept": "mine",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "mine",
+            "min": 94.07
+        },
+        {
+            "courses_dept": "mine",
+            "min": 95.6
+        },
+        {
+            "courses_dept": "mine",
+            "min": 95.43
+        },
+        {
+            "courses_dept": "mine",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "mine",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "mine",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "mine",
+            "min": 95.18
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.82
+        },
+        {
+            "courses_dept": "mine",
+            "min": 96.59
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.13
+        },
+        {
+            "courses_dept": "mine",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "mine",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "midw",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "midw",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "midw",
+            "min": 93.75
+        },
+        {
+            "courses_dept": "midw",
+            "min": 94.08
+        },
+        {
+            "courses_dept": "midw",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "midw",
+            "min": 92.1
+        },
+        {
+            "courses_dept": "midw",
+            "min": 90.62
+        },
+        {
+            "courses_dept": "midw",
+            "min": 91.32
+        },
+        {
+            "courses_dept": "midw",
+            "min": 94.15
+        },
+        {
+            "courses_dept": "midw",
+            "min": 96.5
+        },
+        {
+            "courses_dept": "midw",
+            "min": 93.47
+        },
+        {
+            "courses_dept": "midw",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "midw",
+            "min": 92.29
+        },
+        {
+            "courses_dept": "midw",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "micb",
+            "min": 93.6
+        },
+        {
+            "courses_dept": "micb",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "micb",
+            "min": 94.17
+        },
+        {
+            "courses_dept": "micb",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "micb",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "micb",
+            "min": 92.12
+        },
+        {
+            "courses_dept": "micb",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "micb",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "micb",
+            "min": 90.55
+        },
+        {
+            "courses_dept": "micb",
+            "min": 91.42
+        },
+        {
+            "courses_dept": "medi",
+            "min": 93.29
+        },
+        {
+            "courses_dept": "medi",
+            "min": 93.08
+        },
+        {
+            "courses_dept": "medi",
+            "min": 92
+        },
+        {
+            "courses_dept": "medi",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "medi",
+            "min": 90.8
+        },
+        {
+            "courses_dept": "medi",
+            "min": 91.82
+        },
+        {
+            "courses_dept": "medi",
+            "min": 92.38
+        },
+        {
+            "courses_dept": "medi",
+            "min": 93
+        },
+        {
+            "courses_dept": "medi",
+            "min": 91.47
+        },
+        {
+            "courses_dept": "medi",
+            "min": 92.12
+        },
+        {
+            "courses_dept": "medi",
+            "min": 90.68
+        },
+        {
+            "courses_dept": "medi",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "medi",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "medg",
+            "min": 94.7
+        },
+        {
+            "courses_dept": "medg",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "medg",
+            "min": 91.83
+        },
+        {
+            "courses_dept": "medg",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "medg",
+            "min": 93.25
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.13
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.89
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "medg",
+            "min": 92.14
+        },
+        {
+            "courses_dept": "medg",
+            "min": 90.52
+        },
+        {
+            "courses_dept": "mech",
+            "min": 92.43
+        },
+        {
+            "courses_dept": "mech",
+            "min": 93
+        },
+        {
+            "courses_dept": "mech",
+            "min": 92
+        },
+        {
+            "courses_dept": "mech",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "mech",
+            "min": 91.32
+        },
+        {
+            "courses_dept": "mech",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "mech",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "mech",
+            "min": 92.59
+        },
+        {
+            "courses_dept": "mech",
+            "min": 91.16
+        },
+        {
+            "courses_dept": "mech",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "mech",
+            "min": 91
+        },
+        {
+            "courses_dept": "mech",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.6
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.24
+        },
+        {
+            "courses_dept": "math",
+            "min": 96.33
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.14
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.73
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.94
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.3
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.08
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.73
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.78
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.86
+        },
+        {
+            "courses_dept": "math",
+            "min": 96.83
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.1
+        },
+        {
+            "courses_dept": "math",
+            "min": 97.09
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.78
+        },
+        {
+            "courses_dept": "math",
+            "min": 91
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "math",
+            "min": 95.56
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.47
+        },
+        {
+            "courses_dept": "math",
+            "min": 97.48
+        },
+        {
+            "courses_dept": "math",
+            "min": 95
+        },
+        {
+            "courses_dept": "math",
+            "min": 94.17
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.67
+        },
+        {
+            "courses_dept": "math",
+            "min": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "math",
+            "min": 97.25
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.75
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.11
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "math",
+            "min": 96.25
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.71
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.38
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "math",
+            "min": 92
+        },
+        {
+            "courses_dept": "math",
+            "min": 95.67
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.8
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.6
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.63
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "math",
+            "min": 94.67
+        },
+        {
+            "courses_dept": "math",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "math",
+            "min": 96.44
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "math",
+            "min": 93.8
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "math",
+            "min": 91.1
+        },
+        {
+            "courses_dept": "math",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "math",
+            "min": 94.33
+        },
+        {
+            "courses_dept": "lled",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "lled",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "lled",
+            "min": 90.3
+        },
+        {
+            "courses_dept": "lled",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "lled",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "lled",
+            "min": 90.89
+        },
+        {
+            "courses_dept": "lled",
+            "min": 91.26
+        },
+        {
+            "courses_dept": "lled",
+            "min": 91.68
+        },
+        {
+            "courses_dept": "lled",
+            "min": 91.37
+        },
+        {
+            "courses_dept": "lled",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "lled",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "lled",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "ling",
+            "min": 92.25
+        },
+        {
+            "courses_dept": "libr",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "libr",
+            "min": 91.24
+        },
+        {
+            "courses_dept": "libr",
+            "min": 96.1
+        },
+        {
+            "courses_dept": "libr",
+            "min": 91.23
+        },
+        {
+            "courses_dept": "libr",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "libr",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "libe",
+            "min": 90.19
+        },
+        {
+            "courses_dept": "libe",
+            "min": 90.22
+        },
+        {
+            "courses_dept": "libe",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "libe",
+            "min": 91.26
+        },
+        {
+            "courses_dept": "libe",
+            "min": 92.26
+        },
+        {
+            "courses_dept": "lfs",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "larc",
+            "min": 92.8
+        },
+        {
+            "courses_dept": "larc",
+            "min": 92.07
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.92
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "kin",
+            "min": 95.36
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.29
+        },
+        {
+            "courses_dept": "kin",
+            "min": 96.06
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.56
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.88
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.15
+        },
+        {
+            "courses_dept": "kin",
+            "min": 92.44
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "kin",
+            "min": 92
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.59
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "kin",
+            "min": 95
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.27
+        },
+        {
+            "courses_dept": "kin",
+            "min": 96
+        },
+        {
+            "courses_dept": "kin",
+            "min": 93.29
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.8
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "kin",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.05
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.74
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.3
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.68
+        },
+        {
+            "courses_dept": "kin",
+            "min": 93.47
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.42
+        },
+        {
+            "courses_dept": "kin",
+            "min": 93.37
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.54
+        },
+        {
+            "courses_dept": "kin",
+            "min": 90.19
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.7
+        },
+        {
+            "courses_dept": "kin",
+            "min": 91.07
+        },
+        {
+            "courses_dept": "itst",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "itst",
+            "min": 93
+        },
+        {
+            "courses_dept": "ital",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "isci",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "hunu",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "hist",
+            "min": 93
+        },
+        {
+            "courses_dept": "hinu",
+            "min": 93.22
+        },
+        {
+            "courses_dept": "hinu",
+            "min": 91
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 93.07
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 95.26
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 92
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 95.29
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 93.57
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 90.48
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "gsat",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "gpp",
+            "min": 93.04
+        },
+        {
+            "courses_dept": "germ",
+            "min": 92.25
+        },
+        {
+            "courses_dept": "frst",
+            "min": 90.13
+        },
+        {
+            "courses_dept": "frst",
+            "min": 96.36
+        },
+        {
+            "courses_dept": "frst",
+            "min": 92.27
+        },
+        {
+            "courses_dept": "frst",
+            "min": 90.9
+        },
+        {
+            "courses_dept": "frst",
+            "min": 90.28
+        },
+        {
+            "courses_dept": "frst",
+            "min": 93.17
+        },
+        {
+            "courses_dept": "frst",
+            "min": 90.38
+        },
+        {
+            "courses_dept": "frst",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "frst",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "frst",
+            "min": 90.18
+        },
+        {
+            "courses_dept": "frst",
+            "min": 93
+        },
+        {
+            "courses_dept": "frst",
+            "min": 92.22
+        },
+        {
+            "courses_dept": "fopr",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "fopr",
+            "min": 91
+        },
+        {
+            "courses_dept": "food",
+            "min": 90.68
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 91.87
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 91.32
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 90.93
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 91.55
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 90.85
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 92.22
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 91.35
+        },
+        {
+            "courses_dept": "fnh",
+            "min": 93.05
+        },
+        {
+            "courses_dept": "fish",
+            "min": 91
+        },
+        {
+            "courses_dept": "fish",
+            "min": 91.14
+        },
+        {
+            "courses_dept": "fish",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "fish",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "fish",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "fish",
+            "min": 94
+        },
+        {
+            "courses_dept": "fipr",
+            "min": 96.4
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.71
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.05
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.55
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.05
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.48
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.3
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.19
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.26
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.3
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.35
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.89
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.53
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.63
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.83
+        },
+        {
+            "courses_dept": "etec",
+            "min": 96.47
+        },
+        {
+            "courses_dept": "etec",
+            "min": 95.1
+        },
+        {
+            "courses_dept": "etec",
+            "min": 95.32
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.28
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.42
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.46
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.38
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.48
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.94
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.65
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.69
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.18
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.52
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.76
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.41
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.09
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.7
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.77
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.64
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.35
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.22
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.08
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.58
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.84
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "etec",
+            "min": 95.33
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.79
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.13
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.58
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.03
+        },
+        {
+            "courses_dept": "etec",
+            "min": 95.63
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.26
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.93
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.21
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.19
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.56
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.96
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.95
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "etec",
+            "min": 95.96
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.95
+        },
+        {
+            "courses_dept": "etec",
+            "min": 95.19
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.3
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.21
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.96
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.32
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.62
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.12
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.88
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.64
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.34
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.89
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.38
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.21
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.72
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.22
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.69
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.11
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.31
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.97
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.95
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.9
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.43
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.27
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.86
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.74
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.05
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.09
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.76
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.42
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.42
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.06
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.23
+        },
+        {
+            "courses_dept": "etec",
+            "min": 92.45
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.95
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.37
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.29
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.53
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.05
+        },
+        {
+            "courses_dept": "etec",
+            "min": 91.81
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.41
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.08
+        },
+        {
+            "courses_dept": "etec",
+            "min": 93.14
+        },
+        {
+            "courses_dept": "etec",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.15
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.8
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.41
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.3
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.45
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.83
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.73
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.82
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.84
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.38
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.94
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.64
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.38
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.14
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.82
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.69
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.86
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.58
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.57
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.86
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.1
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.92
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.56
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.23
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.22
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.79
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.64
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97.78
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.74
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.83
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.9
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.08
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.9
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.67
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97.69
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.92
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.67
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.71
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.3
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.31
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.75
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.85
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.17
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.13
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.27
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.25
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.11
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.09
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.68
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.44
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.44
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.29
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.9
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.16
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.95
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.64
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.79
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.42
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.85
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.05
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.15
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.59
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.28
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.31
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.88
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.06
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.06
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.18
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.53
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.13
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.94
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.82
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.29
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97.09
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.91
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.11
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97.67
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.94
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.47
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.69
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.22
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.56
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.37
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.43
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.77
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.24
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.51
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.64
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.53
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.25
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96.03
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.67
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.69
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.91
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.54
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96.9
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.15
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.17
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.18
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.58
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.48
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.19
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.85
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.35
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.48
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.34
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.55
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.88
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.49
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.69
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.09
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.27
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.23
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.11
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.65
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.72
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.39
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.08
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.08
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.1
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.93
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.3
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.09
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.9
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.82
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.23
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.44
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.8
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.26
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.62
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.94
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.45
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.76
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.85
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.22
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.06
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.92
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.63
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.78
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.11
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.55
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.5
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.67
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.83
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.3
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.08
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.7
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.36
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97.29
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.81
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.87
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.05
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96.21
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.47
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.14
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.38
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.03
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.86
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.73
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.48
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.88
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.54
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.56
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.32
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.78
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.13
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.75
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.24
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.31
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.72
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.16
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.13
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.07
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.89
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.57
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.12
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.91
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.65
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.27
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.85
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.91
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.12
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.55
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.47
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.42
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.87
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.52
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.94
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96.24
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.8
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.62
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.87
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.59
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.9
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.72
+        },
+        {
+            "courses_dept": "epse",
+            "min": 97.41
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.72
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.58
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.59
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.18
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "epse",
+            "min": 98.76
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.4
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.14
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.32
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.62
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.22
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.46
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "epse",
+            "min": 95.11
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.36
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.84
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.77
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.7
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.86
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.25
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.58
+        },
+        {
+            "courses_dept": "epse",
+            "min": 96.23
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.8
+        },
+        {
+            "courses_dept": "epse",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.21
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.41
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.36
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.74
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.71
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.1
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.33
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.79
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.41
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.05
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.83
+        },
+        {
+            "courses_dept": "epse",
+            "min": 93.97
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.2
+        },
+        {
+            "courses_dept": "epse",
+            "min": 91.88
+        },
+        {
+            "courses_dept": "epse",
+            "min": 92.74
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 93.47
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.08
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.15
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.56
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 90.62
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 91
+        },
+        {
+            "courses_dept": "eosc",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "elec",
+            "min": 93.88
+        },
+        {
+            "courses_dept": "elec",
+            "min": 91.83
+        },
+        {
+            "courses_dept": "elec",
+            "min": 93.93
+        },
+        {
+            "courses_dept": "elec",
+            "min": 93.91
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.53
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.86
+        },
+        {
+            "courses_dept": "eece",
+            "min": 93.58
+        },
+        {
+            "courses_dept": "eece",
+            "min": 93.56
+        },
+        {
+            "courses_dept": "eece",
+            "min": 92
+        },
+        {
+            "courses_dept": "eece",
+            "min": 92.88
+        },
+        {
+            "courses_dept": "eece",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "eece",
+            "min": 93
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.67
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.38
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.41
+        },
+        {
+            "courses_dept": "eece",
+            "min": 94.71
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.58
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91
+        },
+        {
+            "courses_dept": "eece",
+            "min": 98.75
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "eece",
+            "min": 93.8
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "eece",
+            "min": 92.6
+        },
+        {
+            "courses_dept": "eece",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.14
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "eece",
+            "min": 91.13
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.78
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.91
+        },
+        {
+            "courses_dept": "educ",
+            "min": 92.89
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "educ",
+            "min": 94.87
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.09
+        },
+        {
+            "courses_dept": "educ",
+            "min": 93.27
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.3
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.36
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.22
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.58
+        },
+        {
+            "courses_dept": "educ",
+            "min": 97.5
+        },
+        {
+            "courses_dept": "educ",
+            "min": 93.47
+        },
+        {
+            "courses_dept": "educ",
+            "min": 94
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "educ",
+            "min": 95.16
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.53
+        },
+        {
+            "courses_dept": "educ",
+            "min": 93.53
+        },
+        {
+            "courses_dept": "educ",
+            "min": 93.78
+        },
+        {
+            "courses_dept": "educ",
+            "min": 93.6
+        },
+        {
+            "courses_dept": "educ",
+            "min": 90.35
+        },
+        {
+            "courses_dept": "educ",
+            "min": 92
+        },
+        {
+            "courses_dept": "educ",
+            "min": 93.7
+        },
+        {
+            "courses_dept": "educ",
+            "min": 94.75
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.61
+        },
+        {
+            "courses_dept": "educ",
+            "min": 91.18
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.45
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.42
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.09
+        },
+        {
+            "courses_dept": "edst",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "edst",
+            "min": 93.78
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "edst",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.22
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.36
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.81
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.65
+        },
+        {
+            "courses_dept": "edst",
+            "min": 92.83
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.47
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.87
+        },
+        {
+            "courses_dept": "edst",
+            "min": 92.73
+        },
+        {
+            "courses_dept": "edst",
+            "min": 96.46
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "edst",
+            "min": 93.44
+        },
+        {
+            "courses_dept": "edst",
+            "min": 94.93
+        },
+        {
+            "courses_dept": "edst",
+            "min": 93.4
+        },
+        {
+            "courses_dept": "edst",
+            "min": 92.88
+        },
+        {
+            "courses_dept": "edst",
+            "min": 94.25
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "edst",
+            "min": 95.78
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.15
+        },
+        {
+            "courses_dept": "edst",
+            "min": 92.19
+        },
+        {
+            "courses_dept": "edst",
+            "min": 94
+        },
+        {
+            "courses_dept": "edst",
+            "min": 91.55
+        },
+        {
+            "courses_dept": "edst",
+            "min": 94.06
+        },
+        {
+            "courses_dept": "edst",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.72
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.88
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 94.86
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.73
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.14
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.91
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.76
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.39
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.47
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.63
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.26
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 93.25
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.84
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.78
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.28
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.36
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.35
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.22
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.37
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.64
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 93
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.56
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.45
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.27
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.64
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.11
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.43
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.94
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.06
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 93.56
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.47
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 93.04
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 93.3
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.52
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.44
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 95
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 91.48
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 95.58
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.05
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.96
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.95
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 90.24
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 94.17
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.84
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "econ",
+            "min": 93.47
+        },
+        {
+            "courses_dept": "econ",
+            "min": 92.6
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.95
+        },
+        {
+            "courses_dept": "econ",
+            "min": 92.35
+        },
+        {
+            "courses_dept": "econ",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.13
+        },
+        {
+            "courses_dept": "econ",
+            "min": 93.33
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.21
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "econ",
+            "min": 93.52
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.97
+        },
+        {
+            "courses_dept": "econ",
+            "min": 93
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "econ",
+            "min": 95
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.68
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.08
+        },
+        {
+            "courses_dept": "econ",
+            "min": 90.35
+        },
+        {
+            "courses_dept": "econ",
+            "min": 91.86
+        },
+        {
+            "courses_dept": "eced",
+            "min": 91.22
+        },
+        {
+            "courses_dept": "eced",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "eced",
+            "min": 91.39
+        },
+        {
+            "courses_dept": "eced",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "eced",
+            "min": 92.87
+        },
+        {
+            "courses_dept": "eced",
+            "min": 91.93
+        },
+        {
+            "courses_dept": "eced",
+            "min": 93.72
+        },
+        {
+            "courses_dept": "eced",
+            "min": 90.81
+        },
+        {
+            "courses_dept": "eced",
+            "min": 93.71
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 92.17
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 90.08
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 91.3
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 93.58
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 90.63
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 93.72
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 90.03
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 92.13
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 91.88
+        },
+        {
+            "courses_dept": "dhyg",
+            "min": 91.15
+        },
+        {
+            "courses_dept": "dent",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "dent",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "dent",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "dent",
+            "min": 90.42
+        },
+        {
+            "courses_dept": "dent",
+            "min": 90.83
+        },
+        {
+            "courses_dept": "dent",
+            "min": 91.13
+        },
+        {
+            "courses_dept": "dent",
+            "min": 91
+        },
+        {
+            "courses_dept": "dent",
+            "min": 91.82
+        },
+        {
+            "courses_dept": "dent",
+            "min": 94.33
+        },
+        {
+            "courses_dept": "dent",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "dent",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "dent",
+            "min": 91.09
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.93
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.2
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 93.66
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.8
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.88
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.11
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 93.33
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 98
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.07
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 93.67
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.86
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 95
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 91
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 97
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 96
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.33
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.67
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 95.7
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 92.17
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 93
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.08
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 90.8
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.2
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.53
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 91.22
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 91.79
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 94
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 91
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 92.43
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 92
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.14
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 93.38
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 92.63
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 95
+        },
+        {
+            "courses_dept": "cons",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "cons",
+            "min": 90.21
+        },
+        {
+            "courses_dept": "cons",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "comm",
+            "min": 94.75
+        },
+        {
+            "courses_dept": "comm",
+            "min": 94.56
+        },
+        {
+            "courses_dept": "comm",
+            "min": 94.5
+        },
+        {
+            "courses_dept": "comm",
+            "min": 92.45
+        },
+        {
+            "courses_dept": "cohr",
+            "min": 90.46
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 93.4
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.2
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 93.22
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 93.7
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.88
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.8
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.68
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.95
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.86
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.43
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.93
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.62
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.89
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.18
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.16
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.6
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.92
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 93.08
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.44
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.05
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.95
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.73
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.29
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.22
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.44
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.07
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.92
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.76
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 93.67
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 96.16
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 96
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 96.33
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.26
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.72
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.32
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.21
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 97.47
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.58
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.81
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.71
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.23
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 99.19
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.42
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.53
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.71
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.23
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.94
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.36
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.11
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.35
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.57
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.38
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 95
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.06
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 95.36
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.56
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 95.78
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.9
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.59
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.09
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.17
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.35
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.02
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.12
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.1
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.13
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.89
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.28
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.37
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.66
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.91
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 92.16
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.82
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.69
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.24
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.19
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 90.64
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 91.18
+        },
+        {
+            "courses_dept": "civl",
+            "min": 92.3
+        },
+        {
+            "courses_dept": "civl",
+            "min": 92
+        },
+        {
+            "courses_dept": "civl",
+            "min": 91
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "civl",
+            "min": 91.32
+        },
+        {
+            "courses_dept": "civl",
+            "min": 91.56
+        },
+        {
+            "courses_dept": "civl",
+            "min": 96.27
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "civl",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.88
+        },
+        {
+            "courses_dept": "civl",
+            "min": 91.46
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.39
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.26
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.22
+        },
+        {
+            "courses_dept": "civl",
+            "min": 91.06
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.44
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "civl",
+            "min": 90.06
+        },
+        {
+            "courses_dept": "chil",
+            "min": 91
+        },
+        {
+            "courses_dept": "chil",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "chil",
+            "min": 92
+        },
+        {
+            "courses_dept": "chil",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "chem",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "chem",
+            "min": 90.56
+        },
+        {
+            "courses_dept": "chem",
+            "min": 92.57
+        },
+        {
+            "courses_dept": "chem",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "chem",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "chem",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "chem",
+            "min": 92.5
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 91
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 91.8
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 90.21
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 92.75
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 91.38
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 95.31
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 90.54
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 91.31
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 95.54
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 94.75
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 92.18
+        },
+        {
+            "courses_dept": "cell",
+            "min": 90.58
+        },
+        {
+            "courses_dept": "cell",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "cell",
+            "min": 90.78
+        },
+        {
+            "courses_dept": "cell",
+            "min": 92.7
+        },
+        {
+            "courses_dept": "cell",
+            "min": 93.8
+        },
+        {
+            "courses_dept": "cell",
+            "min": 90.56
+        },
+        {
+            "courses_dept": "cell",
+            "min": 92.67
+        },
+        {
+            "courses_dept": "cell",
+            "min": 91.2
+        },
+        {
+            "courses_dept": "cell",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "cell",
+            "min": 91
+        },
+        {
+            "courses_dept": "cell",
+            "min": 92.4
+        },
+        {
+            "courses_dept": "cell",
+            "min": 93
+        },
+        {
+            "courses_dept": "cell",
+            "min": 94.4
+        },
+        {
+            "courses_dept": "cell",
+            "min": 92.25
+        },
+        {
+            "courses_dept": "cell",
+            "min": 92.14
+        },
+        {
+            "courses_dept": "cell",
+            "min": 90.86
+        },
+        {
+            "courses_dept": "cell",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 90.4
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 92.61
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 94.27
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "ccst",
+            "min": 93.67
+        },
+        {
+            "courses_dept": "bota",
+            "min": 91
+        },
+        {
+            "courses_dept": "bota",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "bota",
+            "min": 92
+        },
+        {
+            "courses_dept": "bmeg",
+            "min": 91
+        },
+        {
+            "courses_dept": "bmeg",
+            "min": 95
+        },
+        {
+            "courses_dept": "bmeg",
+            "min": 95.15
+        },
+        {
+            "courses_dept": "bmeg",
+            "min": 90.9
+        },
+        {
+            "courses_dept": "biol",
+            "min": 94.33
+        },
+        {
+            "courses_dept": "biol",
+            "min": 90.63
+        },
+        {
+            "courses_dept": "biol",
+            "min": 90.74
+        },
+        {
+            "courses_dept": "biol",
+            "min": 90.42
+        },
+        {
+            "courses_dept": "biol",
+            "min": 92.36
+        },
+        {
+            "courses_dept": "biol",
+            "min": 92.1
+        },
+        {
+            "courses_dept": "biol",
+            "min": 92
+        },
+        {
+            "courses_dept": "biol",
+            "min": 90.92
+        },
+        {
+            "courses_dept": "biol",
+            "min": 91.21
+        },
+        {
+            "courses_dept": "biol",
+            "min": 90.48
+        },
+        {
+            "courses_dept": "biol",
+            "min": 92.19
+        },
+        {
+            "courses_dept": "biol",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "biof",
+            "min": 91.67
+        },
+        {
+            "courses_dept": "biof",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "biof",
+            "min": 91.5
+        },
+        {
+            "courses_dept": "biof",
+            "min": 93.45
+        },
+        {
+            "courses_dept": "bioc",
+            "min": 90.1
+        },
+        {
+            "courses_dept": "bioc",
+            "min": 90.57
+        },
+        {
+            "courses_dept": "bioc",
+            "min": 90.25
+        },
+        {
+            "courses_dept": "bioc",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "bams",
+            "min": 91.47
+        },
+        {
+            "courses_dept": "bams",
+            "min": 90.23
+        },
+        {
+            "courses_dept": "babs",
+            "min": 91.38
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.41
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.6
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.2
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.12
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.43
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.73
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.95
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.27
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.36
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.6
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.85
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.89
+        },
+        {
+            "courses_dept": "audi",
+            "min": 96.9
+        },
+        {
+            "courses_dept": "audi",
+            "min": 94.44
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.5
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.75
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.33
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.11
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.11
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.54
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.7
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.92
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.09
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.44
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.79
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.45
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.45
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.75
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.77
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.1
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.29
+        },
+        {
+            "courses_dept": "audi",
+            "min": 90.38
+        },
+        {
+            "courses_dept": "audi",
+            "min": 93.91
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.9
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.08
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.89
+        },
+        {
+            "courses_dept": "audi",
+            "min": 94
+        },
+        {
+            "courses_dept": "audi",
+            "min": 92.25
+        },
+        {
+            "courses_dept": "audi",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "atsc",
+            "min": 92
+        },
+        {
+            "courses_dept": "astr",
+            "min": 91.25
+        },
+        {
+            "courses_dept": "astr",
+            "min": 91.4
+        },
+        {
+            "courses_dept": "arth",
+            "min": 91
+        },
+        {
+            "courses_dept": "arth",
+            "min": 92
+        },
+        {
+            "courses_dept": "arth",
+            "min": 93
+        },
+        {
+            "courses_dept": "arth",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "arth",
+            "min": 90.75
+        },
+        {
+            "courses_dept": "arst",
+            "min": 90.27
+        },
+        {
+            "courses_dept": "arst",
+            "min": 93
+        },
+        {
+            "courses_dept": "arst",
+            "min": 96.94
+        },
+        {
+            "courses_dept": "arst",
+            "min": 92.8
+        },
+        {
+            "courses_dept": "arst",
+            "min": 91.63
+        },
+        {
+            "courses_dept": "arst",
+            "min": 94
+        },
+        {
+            "courses_dept": "arst",
+            "min": 90.67
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 91
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 92.74
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 91.43
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.22
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 93
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 95.95
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 94.1
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.29
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 92.59
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 92.24
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.33
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 91.81
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 95.05
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 96
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.71
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 94.17
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 94.94
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.7
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 95.94
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.47
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 90.2
+        },
+        {
+            "courses_dept": "apbi",
+            "min": 91.86
+        },
+        {
+            "courses_dept": "anth",
+            "min": 92
+        },
+        {
+            "courses_dept": "anth",
+            "min": 92.29
+        },
+        {
+            "courses_dept": "anth",
+            "min": 90.92
+        },
+        {
+            "courses_dept": "anat",
+            "min": 91.67
+        },
+        {
+            "courses_dept": "anat",
+            "min": 92
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 93.33
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.18
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.16
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.72
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 91.33
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.5
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.17
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.85
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 91.48
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 91.29
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.82
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 92.54
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 96.11
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 90.02
+        },
+        {
+            "courses_dept": "aanb",
+            "min": 94.44
+        }
+    ]
+}

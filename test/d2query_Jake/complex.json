@@ -1,0 +1,190 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 120
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_type",
+                "minSeats",
+                "maxSeats",
+                "avgSeats",
+                "countSeats",
+                "sumSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxSeats",
+                    "rooms_type"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_type"
+            ],
+            "APPLY": [
+                {
+                    "minSeats": {
+                        "MIN": "rooms_seats"
+                    }
+                },
+                {
+                    "maxSeats": {
+                        "MAX": "rooms_seats"
+                    }
+                },
+                {
+                    "avgSeats": {
+                        "AVG": "rooms_seats"
+                    }
+                },
+                {
+                    "countSeats": {
+                        "COUNT": "rooms_seats"
+                    }
+                },
+                {
+                    "sumSeats": {
+                        "SUM": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 442,
+            "maxSeats": 442,
+            "avgSeats": 442,
+            "countSeats": 1,
+            "sumSeats": 442
+        },
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 375,
+            "maxSeats": 375,
+            "avgSeats": 375,
+            "countSeats": 1,
+            "sumSeats": 375
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 125,
+            "maxSeats": 350,
+            "avgSeats": 275,
+            "countSeats": 2,
+            "sumSeats": 825
+        },
+        {
+            "rooms_shortname": "SRC",
+            "rooms_type": "TBD",
+            "minSeats": 299,
+            "maxSeats": 299,
+            "avgSeats": 299,
+            "countSeats": 1,
+            "sumSeats": 897
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 260,
+            "maxSeats": 260,
+            "avgSeats": 260,
+            "countSeats": 1,
+            "sumSeats": 260
+        },
+        {
+            "rooms_shortname": "PHRM",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 167,
+            "maxSeats": 236,
+            "avgSeats": 201.5,
+            "countSeats": 2,
+            "sumSeats": 403
+        },
+        {
+            "rooms_shortname": "LSK",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 183,
+            "maxSeats": 205,
+            "avgSeats": 194,
+            "countSeats": 2,
+            "sumSeats": 388
+        },
+        {
+            "rooms_shortname": "CHBE",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 200,
+            "maxSeats": 200,
+            "avgSeats": 200,
+            "countSeats": 1,
+            "sumSeats": 200
+        },
+        {
+            "rooms_shortname": "SWNG",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 187,
+            "maxSeats": 190,
+            "avgSeats": 188.75,
+            "countSeats": 3,
+            "sumSeats": 755
+        },
+        {
+            "rooms_shortname": "FRDM",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 160,
+            "maxSeats": 160,
+            "avgSeats": 160,
+            "countSeats": 1,
+            "sumSeats": 160
+        },
+        {
+            "rooms_shortname": "DMP",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 160,
+            "maxSeats": 160,
+            "avgSeats": 160,
+            "countSeats": 1,
+            "sumSeats": 160
+        },
+        {
+            "rooms_shortname": "IBLC",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 154,
+            "maxSeats": 154,
+            "avgSeats": 154,
+            "countSeats": 1,
+            "sumSeats": 154
+        },
+        {
+            "rooms_shortname": "MCLD",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 123,
+            "maxSeats": 136,
+            "avgSeats": 129.5,
+            "countSeats": 2,
+            "sumSeats": 259
+        }
+    ]
+}

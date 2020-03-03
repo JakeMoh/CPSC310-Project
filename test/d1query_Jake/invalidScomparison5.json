@@ -1,0 +1,19 @@
+{
+    "title": "invalid scomparison wrong skey",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": "string"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,26 @@
+{
+    "title": "inalid negation",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

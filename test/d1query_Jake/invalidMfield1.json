@@ -1,0 +1,32 @@
+{
+    "title": "invalid mfield empty",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "cpsc"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_": "2015"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

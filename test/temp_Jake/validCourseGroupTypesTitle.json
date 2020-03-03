@@ -1,0 +1,95 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "crwr"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "sumPass",
+                "sumFail"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "sumPass",
+                    "sumFail"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "sumPass": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "sumFail": {
+                        "SUM": "courses_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "sumPass": 166,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 270,
+            "sumFail": 16
+        },
+        {
+            "sumPass": 279,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 782,
+            "sumFail": 10
+        },
+        {
+            "sumPass": 898,
+            "sumFail": 12
+        },
+        {
+            "sumPass": 910,
+            "sumFail": 40
+        },
+        {
+            "sumPass": 1002,
+            "sumFail": 40
+        },
+        {
+            "sumPass": 1446,
+            "sumFail": 32
+        },
+        {
+            "sumPass": 1604,
+            "sumFail": 26
+        },
+        {
+            "sumPass": 2102,
+            "sumFail": 40
+        },
+        {
+            "sumPass": 2570,
+            "sumFail": 36
+        },
+        {
+            "sumPass": 3672,
+            "sumFail": 60
+        },
+        {
+            "sumPass": 9280,
+            "sumFail": 176
+        }
+    ]
+}

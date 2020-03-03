@@ -1,0 +1,227 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 96
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "APPLY": [
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "spph"
+        },
+        {
+            "courses_dept": "spph"
+        },
+        {
+            "courses_dept": "spph"
+        },
+        {
+            "courses_dept": "sowk"
+        },
+        {
+            "courses_dept": "sowk"
+        },
+        {
+            "courses_dept": "psyc"
+        },
+        {
+            "courses_dept": "plan"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "nurs"
+        },
+        {
+            "courses_dept": "musc"
+        },
+        {
+            "courses_dept": "mtrl"
+        },
+        {
+            "courses_dept": "mine"
+        },
+        {
+            "courses_dept": "midw"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "math"
+        },
+        {
+            "courses_dept": "libr"
+        },
+        {
+            "courses_dept": "kin"
+        },
+        {
+            "courses_dept": "frst"
+        },
+        {
+            "courses_dept": "fipr"
+        },
+        {
+            "courses_dept": "etec"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "epse"
+        },
+        {
+            "courses_dept": "eece"
+        },
+        {
+            "courses_dept": "educ"
+        },
+        {
+            "courses_dept": "edst"
+        },
+        {
+            "courses_dept": "crwr"
+        },
+        {
+            "courses_dept": "crwr"
+        },
+        {
+            "courses_dept": "cnps"
+        },
+        {
+            "courses_dept": "cnps"
+        },
+        {
+            "courses_dept": "cnps"
+        },
+        {
+            "courses_dept": "cnps"
+        },
+        {
+            "courses_dept": "civl"
+        },
+        {
+            "courses_dept": "audi"
+        },
+        {
+            "courses_dept": "arst"
+        },
+        {
+            "courses_dept": "adhe"
+        }
+    ]
+}

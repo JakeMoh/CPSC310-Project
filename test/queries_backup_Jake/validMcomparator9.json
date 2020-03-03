@@ -1,0 +1,361 @@
+{
+    "title": "valid Mcomparator is LT",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_year": 2015
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63102",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63103",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63104",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63105",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63107",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63108",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63109",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63110",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63111",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63113",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63115",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63116",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63117",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63118",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63119",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63120",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63121",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63122",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63123",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63124",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63125",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63126",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63127",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63128",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63129",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63130",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63131",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63132",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63133",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63134",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63135",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63136",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63137",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63138",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63139",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63140",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63141",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63142",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63143",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63144",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63145",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63146",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63147",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63148",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63149",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63150",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63151",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63152",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63153",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63154",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63155",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63156",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63157",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63161",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63163",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63165",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63167",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63171",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63175",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63179",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63187",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63191",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63201",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63202",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63203",
+                "courses_year": 2016
+            },
+            {
+                "courses_dept": "engl",
+                "courses_uuid": "63204",
+                "courses_year": 2016
+            }
+        ]
+    }
+}

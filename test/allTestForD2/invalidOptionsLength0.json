@@ -1,0 +1,14 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

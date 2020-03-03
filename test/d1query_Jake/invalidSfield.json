@@ -1,0 +1,31 @@
+{
+    "title": "invalid sfield wrong sfield",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_jake": "moh"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

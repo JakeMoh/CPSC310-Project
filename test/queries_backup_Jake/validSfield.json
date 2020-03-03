@@ -1,0 +1,42 @@
+{
+    "title": "valid sfield id",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "*225*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "engl",
+                "courses_id": "225",
+                "courses_avg": 88.65,
+                "courses_instructor": "dreher, gudrun",
+                "courses_title": "poetry",
+                "courses_uuid": "64384"
+            }
+        ]
+    }
+}

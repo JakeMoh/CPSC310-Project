@@ -1,0 +1,31 @@
+{
+    "title": "invalid sfield is empty",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_": "engl"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

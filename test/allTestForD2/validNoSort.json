@@ -1,0 +1,292 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 94
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "min",
+                "max"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "min": {
+                        "MIN": "courses_avg"
+                    }
+                },
+                {
+                    "max": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "aanb",
+            "min": 94.44,
+            "max": 94.44
+        },
+        {
+            "courses_dept": "adhe",
+            "min": 96.11,
+            "max": 96.11
+        },
+        {
+            "courses_dept": "apsc",
+            "min": 94.1,
+            "max": 96
+        },
+        {
+            "courses_dept": "arst",
+            "min": 96.94,
+            "max": 96.94
+        },
+        {
+            "courses_dept": "audi",
+            "min": 94.44,
+            "max": 96.9
+        },
+        {
+            "courses_dept": "biol",
+            "min": 94.33,
+            "max": 94.33
+        },
+        {
+            "courses_dept": "bmeg",
+            "min": 95,
+            "max": 95.15
+        },
+        {
+            "courses_dept": "ceen",
+            "min": 94.27,
+            "max": 94.27
+        },
+        {
+            "courses_dept": "cell",
+            "min": 94.4,
+            "max": 94.4
+        },
+        {
+            "courses_dept": "chbe",
+            "min": 94.75,
+            "max": 95.54
+        },
+        {
+            "courses_dept": "civl",
+            "min": 96.27,
+            "max": 96.27
+        },
+        {
+            "courses_dept": "cnps",
+            "min": 94.05,
+            "max": 99.19
+        },
+        {
+            "courses_dept": "comm",
+            "min": 94.5,
+            "max": 94.75
+        },
+        {
+            "courses_dept": "cpsc",
+            "min": 94.5,
+            "max": 95
+        },
+        {
+            "courses_dept": "crwr",
+            "min": 94.07,
+            "max": 98
+        },
+        {
+            "courses_dept": "dent",
+            "min": 94.33,
+            "max": 94.33
+        },
+        {
+            "courses_dept": "econ",
+            "min": 95,
+            "max": 95
+        },
+        {
+            "courses_dept": "edcp",
+            "min": 94.17,
+            "max": 95.58
+        },
+        {
+            "courses_dept": "edst",
+            "min": 94.06,
+            "max": 96.46
+        },
+        {
+            "courses_dept": "educ",
+            "min": 94.75,
+            "max": 97.5
+        },
+        {
+            "courses_dept": "eece",
+            "min": 94.71,
+            "max": 98.75
+        },
+        {
+            "courses_dept": "epse",
+            "min": 94.05,
+            "max": 98.8
+        },
+        {
+            "courses_dept": "etec",
+            "min": 94.05,
+            "max": 96.47
+        },
+        {
+            "courses_dept": "fipr",
+            "min": 96.4,
+            "max": 96.4
+        },
+        {
+            "courses_dept": "frst",
+            "min": 96.36,
+            "max": 96.36
+        },
+        {
+            "courses_dept": "hgse",
+            "min": 94.5,
+            "max": 95.29
+        },
+        {
+            "courses_dept": "kin",
+            "min": 94.27,
+            "max": 96.06
+        },
+        {
+            "courses_dept": "libr",
+            "min": 96.1,
+            "max": 96.1
+        },
+        {
+            "courses_dept": "math",
+            "min": 94.17,
+            "max": 99.78
+        },
+        {
+            "courses_dept": "medg",
+            "min": 94.7,
+            "max": 94.7
+        },
+        {
+            "courses_dept": "micb",
+            "min": 94.17,
+            "max": 94.17
+        },
+        {
+            "courses_dept": "midw",
+            "min": 94.08,
+            "max": 96.5
+        },
+        {
+            "courses_dept": "mine",
+            "min": 94.07,
+            "max": 96.59
+        },
+        {
+            "courses_dept": "mtrl",
+            "min": 95,
+            "max": 96.25
+        },
+        {
+            "courses_dept": "musc",
+            "min": 94.25,
+            "max": 96.5
+        },
+        {
+            "courses_dept": "nurs",
+            "min": 94.15,
+            "max": 98.71
+        },
+        {
+            "courses_dept": "obst",
+            "min": 95,
+            "max": 95
+        },
+        {
+            "courses_dept": "pcth",
+            "min": 96,
+            "max": 96
+        },
+        {
+            "courses_dept": "phar",
+            "min": 94.54,
+            "max": 95.07
+        },
+        {
+            "courses_dept": "phil",
+            "min": 96,
+            "max": 96
+        },
+        {
+            "courses_dept": "phrm",
+            "min": 94.23,
+            "max": 94.23
+        },
+        {
+            "courses_dept": "phth",
+            "min": 94.32,
+            "max": 95.37
+        },
+        {
+            "courses_dept": "phys",
+            "min": 94.5,
+            "max": 95.43
+        },
+        {
+            "courses_dept": "plan",
+            "min": 94.58,
+            "max": 96.47
+        },
+        {
+            "courses_dept": "psyc",
+            "min": 94.2,
+            "max": 97
+        },
+        {
+            "courses_dept": "rhsc",
+            "min": 95,
+            "max": 95
+        },
+        {
+            "courses_dept": "sowk",
+            "min": 94.33,
+            "max": 96.15
+        },
+        {
+            "courses_dept": "spph",
+            "min": 94.09,
+            "max": 98.98
+        },
+        {
+            "courses_dept": "stat",
+            "min": 94.7,
+            "max": 94.7
+        },
+        {
+            "courses_dept": "surg",
+            "min": 94.25,
+            "max": 94.25
+        },
+        {
+            "courses_dept": "thtr",
+            "min": 95.2,
+            "max": 95.2
+        }
+    ]
+}

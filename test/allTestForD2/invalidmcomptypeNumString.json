@@ -1,0 +1,20 @@
+{
+    "title": "invalid mcomp type gt num in string",
+    "query": {
+        "WHERE": {
+          "GT": {
+            "courses_avg": "50"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

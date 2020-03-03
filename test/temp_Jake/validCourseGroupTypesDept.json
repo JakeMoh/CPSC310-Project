@@ -1,0 +1,47 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "crwr"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "sumPass",
+                "sumFail"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "sumPass",
+                    "sumFail"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "sumPass": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "sumFail": {
+                        "SUM": "courses_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "sumPass": 24981,
+            "sumFail": 488
+        }
+    ]
+}

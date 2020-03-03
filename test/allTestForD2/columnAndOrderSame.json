@@ -1,0 +1,28 @@
+{
+    "title": "scomp star in front and end of string",
+    "query": {
+        "WHERE": {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 90.68
+              }
+            },
+            {
+              "LT": {
+                "courses_avg": 90.7
+              }
+            }
+          ]
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_avg":90.69},{"courses_avg":90.69},{"courses_avg":90.69},{"courses_avg":90.69},{"courses_avg":90.69},{"courses_avg":90.69}]
+
+}

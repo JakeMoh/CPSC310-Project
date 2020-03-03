@@ -1,0 +1,17 @@
+{
+    "title": "",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": "ABC"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

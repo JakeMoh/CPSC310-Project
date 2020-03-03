@@ -1,0 +1,12 @@
+{
+    "title": "invalid columns is empty",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

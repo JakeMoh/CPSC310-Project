@@ -1,0 +1,20 @@
+{
+    "title": "scomp dept valid",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courses_dept":"*nat"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"anat","courses_id":"392","courses_avg":80.28},{"courses_dept":"anat","courses_id":"392","courses_avg":80.28},{"courses_dept":"anat","courses_id":"392","courses_avg":81.41},{"courses_dept":"anat","courses_id":"392","courses_avg":81.41},{"courses_dept":"anat","courses_id":"392","courses_avg":81.71},{"courses_dept":"anat","courses_id":"392","courses_avg":81.71},{"courses_dept":"anat","courses_id":"392","courses_avg":81.82},{"courses_dept":"anat","courses_id":"392","courses_avg":81.82},{"courses_dept":"anat","courses_id":"392","courses_avg":82.29},{"courses_dept":"anat","courses_id":"392","courses_avg":82.29},{"courses_dept":"anat","courses_id":"392","courses_avg":83.34},{"courses_dept":"anat","courses_id":"392","courses_avg":83.34},{"courses_dept":"anat","courses_id":"511","courses_avg":83.6},{"courses_dept":"anat","courses_id":"511","courses_avg":83.6},{"courses_dept":"anat","courses_id":"392","courses_avg":83.65},{"courses_dept":"anat","courses_id":"392","courses_avg":83.65},{"courses_dept":"anat","courses_id":"392","courses_avg":83.74},{"courses_dept":"anat","courses_id":"392","courses_avg":83.74},{"courses_dept":"anat","courses_id":"511","courses_avg":85.4},{"courses_dept":"anat","courses_id":"511","courses_avg":85.4},{"courses_dept":"anat","courses_id":"392","courses_avg":86.29},{"courses_dept":"anat","courses_id":"392","courses_avg":86.29},{"courses_dept":"anat","courses_id":"515","courses_avg":86.67},{"courses_dept":"anat","courses_id":"515","courses_avg":86.67},{"courses_dept":"anat","courses_id":"515","courses_avg":89.6},{"courses_dept":"anat","courses_id":"515","courses_avg":89.6},{"courses_dept":"anat","courses_id":"512","courses_avg":91.67},{"courses_dept":"anat","courses_id":"512","courses_avg":91.67},{"courses_dept":"anat","courses_id":"511","courses_avg":92},{"courses_dept":"anat","courses_id":"511","courses_avg":92}]
+}

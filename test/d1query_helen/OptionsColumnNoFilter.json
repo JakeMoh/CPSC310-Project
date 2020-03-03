@@ -1,0 +1,19 @@
+{
+    "title": "Invalid scomp multiple keys",
+    "query": {
+        "WHERE": {
+            "GT": {
+            "courses_avg": 98
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "InsightError"
+  }
+  

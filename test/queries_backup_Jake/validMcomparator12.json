@@ -1,0 +1,71 @@
+{
+    "title": "valid Mcomparator is LT",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_fail": 8
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "engl",
+                "courses_id": "100",
+                "courses_avg": 73.03
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "100",
+                "courses_avg": 73.51
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "111",
+                "courses_avg": 70.02
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "112",
+                "courses_avg": 73.81
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "112",
+                "courses_avg": 71.22
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "222",
+                "courses_avg": 72.2
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "227",
+                "courses_avg": 73.2
+            },
+            {
+                "courses_dept": "engl",
+                "courses_id": "362",
+                "courses_avg": 64.77
+            }
+        ]
+    }
+}

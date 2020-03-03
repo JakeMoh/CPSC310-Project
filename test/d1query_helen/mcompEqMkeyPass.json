@@ -1,0 +1,20 @@
+{
+    "title": "mcomp eq 0 mkey fail",
+    "query": {
+        "WHERE": {
+          "EQ": {
+            "courses_fail": 50
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"chem","courses_id":"121","courses_avg":59.83},{"courses_dept":"chem","courses_id":"121","courses_avg":61.54},{"courses_dept":"math","courses_id":"101","courses_avg":65},{"courses_dept":"math","courses_id":"255","courses_avg":66.48},{"courses_dept":"busi","courses_id":"293","courses_avg":66.86},{"courses_dept":"math","courses_id":"220","courses_avg":67.83},{"courses_dept":"bioc","courses_id":"302","courses_avg":68.09},{"courses_dept":"math","courses_id":"105","courses_avg":68.65},{"courses_dept":"bioc","courses_id":"302","courses_avg":68.69},{"courses_dept":"japn","courses_id":"100","courses_avg":70.66}]
+}

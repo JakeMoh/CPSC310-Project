@@ -1,0 +1,20 @@
+{
+    "title": "scomp star in front and end of string",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courses_title": "software*"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cpen","courses_id":"321","courses_avg":80.87},{"courses_dept":"cpen","courses_id":"321","courses_avg":80.87},{"courses_dept":"cpsc","courses_id":"507","courses_avg":82.5},{"courses_dept":"cpsc","courses_id":"507","courses_avg":82.5},{"courses_dept":"cpsc","courses_id":"507","courses_avg":84.75},{"courses_dept":"cpsc","courses_id":"507","courses_avg":84.75},{"courses_dept":"cpen","courses_id":"492","courses_avg":85.92},{"courses_dept":"cpen","courses_id":"492","courses_avg":85.92},{"courses_dept":"cpsc","courses_id":"507","courses_avg":89},{"courses_dept":"cpsc","courses_id":"507","courses_avg":89},{"courses_dept":"cpsc","courses_id":"507","courses_avg":89.17},{"courses_dept":"cpsc","courses_id":"507","courses_avg":89.17},{"courses_dept":"cpsc","courses_id":"507","courses_avg":91.79},{"courses_dept":"cpsc","courses_id":"507","courses_avg":91.79}]
+}

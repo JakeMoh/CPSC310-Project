@@ -1,0 +1,15 @@
+{
+    "title": "invalid body",
+    "query": {
+        "WHERE": {
+            "EQ": "123"
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

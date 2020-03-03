@@ -1,0 +1,111 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "crwr"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "sumPass",
+                "sumFail"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "sumPass",
+                    "sumFail"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_fail"
+            ],
+            "APPLY": [
+                {
+                    "sumPass": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "sumFail": {
+                        "SUM": "courses_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "sumPass": 160,
+            "sumFail": 9
+        },
+        {
+            "sumPass": 216,
+            "sumFail": 11
+        },
+        {
+            "sumPass": 281,
+            "sumFail": 13
+        },
+        {
+            "sumPass": 663,
+            "sumFail": 12
+        },
+        {
+            "sumPass": 836,
+            "sumFail": 20
+        },
+        {
+            "sumPass": 864,
+            "sumFail": 32
+        },
+        {
+            "sumPass": 871,
+            "sumFail": 15
+        },
+        {
+            "sumPass": 915,
+            "sumFail": 24
+        },
+        {
+            "sumPass": 1111,
+            "sumFail": 16
+        },
+        {
+            "sumPass": 1652,
+            "sumFail": 40
+        },
+        {
+            "sumPass": 1679,
+            "sumFail": 33
+        },
+        {
+            "sumPass": 2083,
+            "sumFail": 48
+        },
+        {
+            "sumPass": 2090,
+            "sumFail": 70
+        },
+        {
+            "sumPass": 2165,
+            "sumFail": 60
+        },
+        {
+            "sumPass": 2581,
+            "sumFail": 25
+        },
+        {
+            "sumPass": 2710,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 4104,
+            "sumFail": 60
+        }
+    ]
+}

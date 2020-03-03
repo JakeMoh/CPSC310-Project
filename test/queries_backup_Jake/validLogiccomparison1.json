@@ -1,0 +1,46 @@
+{
+    "title": "valid logic comparison many body",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 65
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 66
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "cpsc",
+                "courses_id": "221",
+                "courses_avg": 65.1
+            },
+            {
+                "courses_dept": "cpsc",
+                "courses_id": "221",
+                "courses_avg": 65.26
+            }
+        ]
+    }
+}

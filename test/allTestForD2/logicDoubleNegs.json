@@ -1,0 +1,23 @@
+{
+    "title": "scomp star in front and end of string",
+    "query": {
+        "WHERE": {
+          "NOT": {
+            "NOT": {
+            "EQ": {
+                "courses_avg": 98
+            }
+          }
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_avg":98},{"courses_avg":98}]
+
+}

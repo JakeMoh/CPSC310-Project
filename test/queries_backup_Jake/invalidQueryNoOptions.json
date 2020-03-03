@@ -1,0 +1,9 @@
+{
+    "title": "",
+    "query": {
+        "WHERE": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

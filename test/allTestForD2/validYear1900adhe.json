@@ -1,0 +1,28 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "17257"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_uuid": "17257",
+            "courses_year": 1900
+        }
+    ]
+}

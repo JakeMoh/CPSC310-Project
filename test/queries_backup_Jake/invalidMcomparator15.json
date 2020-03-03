@@ -1,0 +1,31 @@
+{
+    "title": "invalid Mcomparator is empty",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 80
+                    },
+                    "GT": {
+                        "courses_avg": 89
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

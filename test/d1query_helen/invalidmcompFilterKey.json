@@ -1,0 +1,20 @@
+{
+    "title": "invalid mcomp >1 dataset",
+    "query": {
+        "WHERE": {
+          "BT": {
+            "123_avg": 95
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

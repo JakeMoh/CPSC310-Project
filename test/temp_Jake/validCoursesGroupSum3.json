@@ -1,0 +1,250 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "sum"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "sum"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "sum": {
+                        "SUM": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_id": "121",
+            "sum": 4608.02
+        },
+        {
+            "courses_id": "110",
+            "sum": 4315.79
+        },
+        {
+            "courses_id": "221",
+            "sum": 3873.43
+        },
+        {
+            "courses_id": "210",
+            "sum": 3403.46
+        },
+        {
+            "courses_id": "213",
+            "sum": 3183.71
+        },
+        {
+            "courses_id": "304",
+            "sum": 3128.23
+        },
+        {
+            "courses_id": "310",
+            "sum": 3051.73
+        },
+        {
+            "courses_id": "313",
+            "sum": 2589.4
+        },
+        {
+            "courses_id": "320",
+            "sum": 2313.12
+        },
+        {
+            "courses_id": "322",
+            "sum": 2266.48
+        },
+        {
+            "courses_id": "314",
+            "sum": 2073.03
+        },
+        {
+            "courses_id": "404",
+            "sum": 2006.77
+        },
+        {
+            "courses_id": "317",
+            "sum": 1959.28
+        },
+        {
+            "courses_id": "430",
+            "sum": 1702.58
+        },
+        {
+            "courses_id": "312",
+            "sum": 1614.16
+        },
+        {
+            "courses_id": "319",
+            "sum": 1521.28
+        },
+        {
+            "courses_id": "544",
+            "sum": 1517.6
+        },
+        {
+            "courses_id": "340",
+            "sum": 1513.82
+        },
+        {
+            "courses_id": "500",
+            "sum": 1511.2
+        },
+        {
+            "courses_id": "344",
+            "sum": 1491
+        },
+        {
+            "courses_id": "589",
+            "sum": 1457.77
+        },
+        {
+            "courses_id": "445",
+            "sum": 1455.46
+        },
+        {
+            "courses_id": "449",
+            "sum": 1446.06
+        },
+        {
+            "courses_id": "411",
+            "sum": 1443.3
+        },
+        {
+            "courses_id": "415",
+            "sum": 1418.58
+        },
+        {
+            "courses_id": "311",
+            "sum": 1390.44
+        },
+        {
+            "courses_id": "410",
+            "sum": 1388
+        },
+        {
+            "courses_id": "540",
+            "sum": 1373.92
+        },
+        {
+            "courses_id": "302",
+            "sum": 1359.2
+        },
+        {
+            "courses_id": "421",
+            "sum": 1348.36
+        },
+        {
+            "courses_id": "416",
+            "sum": 1348.18
+        },
+        {
+            "courses_id": "490",
+            "sum": 1346.55
+        },
+        {
+            "courses_id": "425",
+            "sum": 1330.7
+        },
+        {
+            "courses_id": "513",
+            "sum": 1323.14
+        },
+        {
+            "courses_id": "422",
+            "sum": 1314.16
+        },
+        {
+            "courses_id": "303",
+            "sum": 1309.7
+        },
+        {
+            "courses_id": "420",
+            "sum": 1300.28
+        },
+        {
+            "courses_id": "521",
+            "sum": 1190.82
+        },
+        {
+            "courses_id": "502",
+            "sum": 1161.48
+        },
+        {
+            "courses_id": "301",
+            "sum": 1145.72
+        },
+        {
+            "courses_id": "501",
+            "sum": 1077.3
+        },
+        {
+            "courses_id": "503",
+            "sum": 1057
+        },
+        {
+            "courses_id": "543",
+            "sum": 1029.4
+        },
+        {
+            "courses_id": "507",
+            "sum": 874.42
+        },
+        {
+            "courses_id": "509",
+            "sum": 860.2
+        },
+        {
+            "courses_id": "444",
+            "sum": 788.38
+        },
+        {
+            "courses_id": "259",
+            "sum": 744.64
+        },
+        {
+            "courses_id": "527",
+            "sum": 699.88
+        },
+        {
+            "courses_id": "522",
+            "sum": 681.3
+        },
+        {
+            "courses_id": "261",
+            "sum": 553.36
+        },
+        {
+            "courses_id": "515",
+            "sum": 490.78
+        },
+        {
+            "courses_id": "418",
+            "sum": 483.04
+        },
+        {
+            "courses_id": "547",
+            "sum": 354.3
+        }
+    ]
+}

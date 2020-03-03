@@ -1,0 +1,20 @@
+{
+    "title": "scomp star in front and end of string",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courses_instructor": "alli*"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"sowk","courses_id":"310","courses_avg":78.94},{"courses_dept":"sowk","courses_id":"310","courses_avg":83.62},{"courses_dept":"sowk","courses_id":"310","courses_avg":83.88},{"courses_dept":"sowk","courses_id":"310","courses_avg":84.15},{"courses_dept":"sowk","courses_id":"502","courses_avg":84.31},{"courses_dept":"sowk","courses_id":"310","courses_avg":85.86},{"courses_dept":"sowk","courses_id":"502","courses_avg":86.5}]
+}

@@ -1,0 +1,57 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "sum"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "sum": {
+                        "SUM": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "sum": 99.19
+        },
+        {
+            "sum": 197.5
+        },
+        {
+            "sum": 295.14
+        },
+        {
+            "sum": 493.48
+        },
+        {
+            "sum": 196.9
+        },
+        {
+            "sum": 199.56
+        },
+        {
+            "sum": 393.84
+        },
+        {
+            "sum": 394.16
+        },
+        {
+            "sum": 197.96
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "title": "D2 Query Invalid",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": 123,
+            "APPLY": [
+                {
+                    "avgSeats": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+

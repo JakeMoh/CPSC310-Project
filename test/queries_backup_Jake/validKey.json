@@ -1,0 +1,98 @@
+{
+    "title": "valid inputstring two *",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_avg": 88.65,
+                "courses_pass": 43,
+                "courses_fail": 0,
+                "courses_audit": 0,
+                "courses_year": 2010,
+                "courses_dept": "engl",
+                "courses_id": "225",
+                "courses_instructor": "dreher, gudrun",
+                "courses_title": "poetry",
+                "courses_uuid": "64384"
+            },
+            {
+                "courses_avg": 87.6,
+                "courses_pass": 10,
+                "courses_fail": 0,
+                "courses_audit": 0,
+                "courses_year": 2007,
+                "courses_dept": "engl",
+                "courses_id": "301",
+                "courses_instructor": "slemon, jane c",
+                "courses_title": "tech writing",
+                "courses_uuid": "41559"
+            },
+            {
+                "courses_avg": 89.68,
+                "courses_pass": 40,
+                "courses_fail": 0,
+                "courses_audit": 0,
+                "courses_year": 2012,
+                "courses_dept": "engl",
+                "courses_id": "321",
+                "courses_instructor": "biermann, wilhelmina georgina",
+                "courses_title": "traditnl grammar",
+                "courses_uuid": "18844"
+            },
+            {
+                "courses_avg": 87.11,
+                "courses_pass": 44,
+                "courses_fail": 0,
+                "courses_audit": 0,
+                "courses_year": 2013,
+                "courses_dept": "engl",
+                "courses_id": "321",
+                "courses_instructor": "biermann, wilhelmina georgina",
+                "courses_title": "traditnl grammar",
+                "courses_uuid": "57190"
+            },
+            {
+                "courses_avg": 87.38,
+                "courses_pass": 8,
+                "courses_fail": 0,
+                "courses_audit": 0,
+                "courses_year": 2013,
+                "courses_dept": "engl",
+                "courses_id": "489",
+                "courses_instructor": "dollinger, stefan",
+                "courses_title": "maj seminar lang",
+                "courses_uuid": "57287"
+            }
+        ]
+    }
+}

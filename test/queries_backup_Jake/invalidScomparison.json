@@ -1,0 +1,28 @@
+{
+    "title": "invalid scomparison empty",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

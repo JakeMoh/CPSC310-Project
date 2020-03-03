@@ -1,0 +1,20 @@
+{
+    "title": "invalid mcomp bad dataset id",
+    "query": {
+        "WHERE": {
+          "EQ": {
+            "123_123_avg": 23
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "123_dept",
+            "123_id",
+            "123_avg"
+          ],
+          "ORDER": "123_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

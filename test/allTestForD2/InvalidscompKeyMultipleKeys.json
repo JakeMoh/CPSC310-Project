@@ -1,0 +1,22 @@
+{
+    "title": "Invalid scomp multiple keys",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courses_dept":"anat",
+            "courses_id": "abc"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "InsightError"
+  }
+  

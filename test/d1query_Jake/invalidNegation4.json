@@ -1,0 +1,6 @@
+{
+    "title": "invalid negation",
+    "query": null,
+    "isQueryValid": false,
+    "result": "InsightError"
+}

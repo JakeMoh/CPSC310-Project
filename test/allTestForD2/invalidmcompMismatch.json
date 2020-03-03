@@ -1,0 +1,20 @@
+{
+    "title": "invalid mcomp mismatched filter and key",
+    "query": {
+        "WHERE": {
+          "EQ": {
+            "courses_dept": 2007
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

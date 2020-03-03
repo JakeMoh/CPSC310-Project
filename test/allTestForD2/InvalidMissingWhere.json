@@ -1,0 +1,24 @@
+{
+    "title": "Invalid scomp multiple keys",
+    "query": {
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg",
+            "courses_pass",
+            "courses_fail",
+            "courses_audit",
+            "courses_year",
+            "courses_dept",
+            "courses_id",
+            "courses_instructor",
+            "courses_title",
+            "courses_uuid"
+          ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+  }
+  

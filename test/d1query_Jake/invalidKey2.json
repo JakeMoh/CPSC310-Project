@@ -1,0 +1,25 @@
+{
+    "title": "invalid key with wrong key",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

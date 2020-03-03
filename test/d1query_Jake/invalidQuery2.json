@@ -1,0 +1,6 @@
+{
+    "title": "inalid negation",
+    "query": "JAKE",
+    "isQueryValid": false,
+    "result": "InsightError"
+}

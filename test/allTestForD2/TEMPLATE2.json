@@ -1,0 +1,96 @@
+{
+    "title": "TEMPLATE",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "rooms_seats": 300
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_shortname": "WOOD"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "CIRS"
+        },
+        {
+            "rooms_shortname": "ESB"
+        },
+        {
+            "rooms_shortname": "HEBB"
+        },
+        {
+            "rooms_shortname": "LSC"
+        },
+        {
+            "rooms_shortname": "LSC"
+        },
+        {
+            "rooms_shortname": "OSBO"
+        },
+        {
+            "rooms_shortname": "WESB"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        },
+        {
+            "rooms_shortname": "WOOD"
+        }
+    ]
+}

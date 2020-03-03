@@ -1,0 +1,15 @@
+{
+    "title": "invalid body filter",
+    "query": {
+        "WHERE": {
+            "AA": {
+
+            }
+        },
+        "OPTIONS": {
+
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,32 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "sumPass",
+                "sumFail"
+            ],
+            "ORDER": "sumPass"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "sumPass": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "sumFail": {
+                        "SUM": "rooms_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

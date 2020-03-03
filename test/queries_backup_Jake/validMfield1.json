@@ -1,0 +1,71 @@
+{
+    "title": "valid mfield fail",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_fail": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "cpsc",
+                "courses_id": "110",
+                "courses_avg": 72.28,
+                "courses_pass": 886,
+                "courses_fail": 157,
+                "courses_audit": 0,
+                "courses_year": 1900
+            },
+            {
+                "courses_dept": "cpsc",
+                "courses_id": "110",
+                "courses_avg": 71.22,
+                "courses_pass": 819,
+                "courses_fail": 150,
+                "courses_audit": 0,
+                "courses_year": 1900
+            },
+            {
+                "courses_dept": "cpsc",
+                "courses_id": "110",
+                "courses_avg": 73.25,
+                "courses_pass": 966,
+                "courses_fail": 190,
+                "courses_audit": 0,
+                "courses_year": 1900
+            },
+            {
+                "courses_dept": "cpsc",
+                "courses_id": "110",
+                "courses_avg": 72.63,
+                "courses_pass": 736,
+                "courses_fail": 118,
+                "courses_audit": 3,
+                "courses_year": 1900
+            }
+        ]
+    }
+}

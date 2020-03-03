@@ -1,0 +1,97 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "sum"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "sum"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_pass",
+                "courses_audit",
+                "courses_id",
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "sum": {
+                        "SUM": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "nurs",
+            "sum": 393.84
+        },
+        {
+            "courses_dept": "math",
+            "sum": 199.56
+        },
+        {
+            "courses_dept": "spph",
+            "sum": 197.96
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 197.52
+        },
+        {
+            "courses_dept": "eece",
+            "sum": 197.5
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 197.16
+        },
+        {
+            "courses_dept": "nurs",
+            "sum": 197.16
+        },
+        {
+            "courses_dept": "nurs",
+            "sum": 197
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 196.9
+        },
+        {
+            "courses_dept": "cnps",
+            "sum": 99.19
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 98.8
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 98.7
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 98.36
+        },
+        {
+            "courses_dept": "epse",
+            "sum": 98.08
+        }
+    ]
+}

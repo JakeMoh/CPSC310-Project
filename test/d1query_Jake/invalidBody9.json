@@ -1,0 +1,32 @@
+{
+    "title": "valid mfield pass",
+    "query": {
+        "": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "engl"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_pass": 2500
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,691 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "OR": [
+                        {
+                            "GT": {
+                                "rooms_seats": 200
+                            }
+                        },
+                        {
+                            "LT": {
+                                "rooms_lon": 1000
+                            }
+                        },
+                        {
+                            "EQ": {
+                                "rooms_lat": 1000
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_fullname": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_shortname": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_number": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_name": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_address": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_type": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_furniture": "Angie"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_href": "Angie"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 10
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_type",
+                "minSeats",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxSeats",
+                    "rooms_type"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_type"
+            ],
+            "APPLY": [
+                {
+                    "minSeats": {
+                        "MIN": "rooms_seats"
+                    }
+                },
+                {
+                    "maxSeats": {
+                        "MAX": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "WOOD",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 88,
+            "maxSeats": 503
+        },
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 442,
+            "maxSeats": 442
+        },
+        {
+            "rooms_shortname": "CIRS",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 426,
+            "maxSeats": 426
+        },
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 375,
+            "maxSeats": 375
+        },
+        {
+            "rooms_shortname": "ESB",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 80,
+            "maxSeats": 350
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 125,
+            "maxSeats": 350
+        },
+        {
+            "rooms_shortname": "WESB",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 102,
+            "maxSeats": 325
+        },
+        {
+            "rooms_shortname": "SRC",
+            "rooms_type": "TBD",
+            "minSeats": 299,
+            "maxSeats": 299
+        },
+        {
+            "rooms_shortname": "SCRF",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 280,
+            "maxSeats": 280
+        },
+        {
+            "rooms_shortname": "BUCH",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 65,
+            "maxSeats": 275
+        },
+        {
+            "rooms_shortname": "CHEM",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 90,
+            "maxSeats": 265
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 44,
+            "maxSeats": 260
+        },
+        {
+            "rooms_shortname": "HENN",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 150,
+            "maxSeats": 257
+        },
+        {
+            "rooms_shortname": "FSC",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 99,
+            "maxSeats": 250
+        },
+        {
+            "rooms_shortname": "PHRM",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 167,
+            "maxSeats": 236
+        },
+        {
+            "rooms_shortname": "BIOL",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 76,
+            "maxSeats": 228
+        },
+        {
+            "rooms_shortname": "GEOG",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 225,
+            "maxSeats": 225
+        },
+        {
+            "rooms_shortname": "MATH",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 224,
+            "maxSeats": 224
+        },
+        {
+            "rooms_shortname": "LSK",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 183,
+            "maxSeats": 205
+        },
+        {
+            "rooms_shortname": "CHBE",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 94,
+            "maxSeats": 200
+        },
+        {
+            "rooms_shortname": "MCML",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 74,
+            "maxSeats": 200
+        },
+        {
+            "rooms_shortname": "SWNG",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 187,
+            "maxSeats": 190
+        },
+        {
+            "rooms_shortname": "DMP",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 80,
+            "maxSeats": 160
+        },
+        {
+            "rooms_shortname": "FRDM",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 160,
+            "maxSeats": 160
+        },
+        {
+            "rooms_shortname": "IBLC",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 154,
+            "maxSeats": 154
+        },
+        {
+            "rooms_shortname": "AERL",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 144,
+            "maxSeats": 144
+        },
+        {
+            "rooms_shortname": "MCLD",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 123,
+            "maxSeats": 136
+        },
+        {
+            "rooms_shortname": "IBLC",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 112,
+            "maxSeats": 112
+        },
+        {
+            "rooms_shortname": "BUCH",
+            "rooms_type": "Case Style",
+            "minSeats": 56,
+            "maxSeats": 108
+        },
+        {
+            "rooms_shortname": "MATX",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 106,
+            "maxSeats": 106
+        },
+        {
+            "rooms_shortname": "CEME",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 100,
+            "maxSeats": 100
+        },
+        {
+            "rooms_shortname": "GEOG",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 42,
+            "maxSeats": 100
+        },
+        {
+            "rooms_shortname": "IONA",
+            "rooms_type": "Case Style",
+            "minSeats": 100,
+            "maxSeats": 100
+        },
+        {
+            "rooms_shortname": "FNH",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 99,
+            "maxSeats": 99
+        },
+        {
+            "rooms_shortname": "LASR",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 80,
+            "maxSeats": 94
+        },
+        {
+            "rooms_shortname": "ALRD",
+            "rooms_type": "Case Style",
+            "minSeats": 50,
+            "maxSeats": 94
+        },
+        {
+            "rooms_shortname": "ANSO",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 90,
+            "maxSeats": 90
+        },
+        {
+            "rooms_shortname": "MCLD",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 60,
+            "maxSeats": 84
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 16,
+            "maxSeats": 80
+        },
+        {
+            "rooms_shortname": "LSK",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 42,
+            "maxSeats": 75
+        },
+        {
+            "rooms_shortname": "ORCH",
+            "rooms_type": "Studio Lab",
+            "minSeats": 48,
+            "maxSeats": 72
+        },
+        {
+            "rooms_shortname": "ORCH",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 16,
+            "maxSeats": 72
+        },
+        {
+            "rooms_shortname": "PHRM",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 72,
+            "maxSeats": 72
+        },
+        {
+            "rooms_shortname": "MCML",
+            "rooms_type": "Case Style",
+            "minSeats": 72,
+            "maxSeats": 72
+        },
+        {
+            "rooms_shortname": "ORCH",
+            "rooms_type": "Active Learning",
+            "minSeats": 16,
+            "maxSeats": 72
+        },
+        {
+            "rooms_shortname": "BRKX",
+            "rooms_type": "Tiered Large Group",
+            "minSeats": 70,
+            "maxSeats": 70
+        },
+        {
+            "rooms_shortname": "SOWK",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 29,
+            "maxSeats": 68
+        },
+        {
+            "rooms_shortname": "SPPH",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 66,
+            "maxSeats": 66
+        },
+        {
+            "rooms_shortname": "FSC",
+            "rooms_type": "Case Style",
+            "minSeats": 65,
+            "maxSeats": 65
+        },
+        {
+            "rooms_shortname": "FORW",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 63,
+            "maxSeats": 63
+        },
+        {
+            "rooms_shortname": "CEME",
+            "rooms_type": "Case Style",
+            "minSeats": 34,
+            "maxSeats": 62
+        },
+        {
+            "rooms_shortname": "SCRF",
+            "rooms_type": "Small Group",
+            "minSeats": 20,
+            "maxSeats": 60
+        },
+        {
+            "rooms_shortname": "MATH",
+            "rooms_type": "Small Group",
+            "minSeats": 25,
+            "maxSeats": 60
+        },
+        {
+            "rooms_shortname": "CHBE",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 60,
+            "maxSeats": 60
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_type": "Case Style",
+            "minSeats": 41,
+            "maxSeats": 60
+        },
+        {
+            "rooms_shortname": "LASR",
+            "rooms_type": "",
+            "minSeats": 60,
+            "maxSeats": 60
+        },
+        {
+            "rooms_shortname": "UCLL",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 48,
+            "maxSeats": 55
+        },
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 54,
+            "maxSeats": 54
+        },
+        {
+            "rooms_shortname": "FNH",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 43,
+            "maxSeats": 54
+        },
+        {
+            "rooms_shortname": "LASR",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 51,
+            "maxSeats": 51
+        },
+        {
+            "rooms_shortname": "EOSM",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 50,
+            "maxSeats": 50
+        },
+        {
+            "rooms_shortname": "BUCH",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 24,
+            "maxSeats": 50
+        },
+        {
+            "rooms_shortname": "IONA",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 50,
+            "maxSeats": 50
+        },
+        {
+            "rooms_shortname": "IBLC",
+            "rooms_type": "Case Style",
+            "minSeats": 50,
+            "maxSeats": 50
+        },
+        {
+            "rooms_shortname": "MATH",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 30,
+            "maxSeats": 48
+        },
+        {
+            "rooms_shortname": "MCML",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 47,
+            "maxSeats": 47
+        },
+        {
+            "rooms_shortname": "SWNG",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 47,
+            "maxSeats": 47
+        },
+        {
+            "rooms_shortname": "FORW",
+            "rooms_type": "Small Group",
+            "minSeats": 35,
+            "maxSeats": 44
+        },
+        {
+            "rooms_shortname": "ALRD",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 20,
+            "maxSeats": 44
+        },
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_type": "Small Group",
+            "minSeats": 39,
+            "maxSeats": 40
+        },
+        {
+            "rooms_shortname": "IBLC",
+            "rooms_type": "Small Group",
+            "minSeats": 12,
+            "maxSeats": 40
+        },
+        {
+            "rooms_shortname": "MCLD",
+            "rooms_type": "Small Group",
+            "minSeats": 40,
+            "maxSeats": 40
+        },
+        {
+            "rooms_shortname": "DMP",
+            "rooms_type": "Small Group",
+            "minSeats": 40,
+            "maxSeats": 40
+        },
+        {
+            "rooms_shortname": "PCOH",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 40,
+            "maxSeats": 40
+        },
+        {
+            "rooms_shortname": "MGYM",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 25,
+            "maxSeats": 40
+        },
+        {
+            "rooms_shortname": "GEOG",
+            "rooms_type": "Small Group",
+            "minSeats": 21,
+            "maxSeats": 39
+        },
+        {
+            "rooms_shortname": "ANSO",
+            "rooms_type": "Small Group",
+            "minSeats": 26,
+            "maxSeats": 37
+        },
+        {
+            "rooms_shortname": "HENN",
+            "rooms_type": "Small Group",
+            "minSeats": 30,
+            "maxSeats": 36
+        },
+        {
+            "rooms_shortname": "FSC",
+            "rooms_type": "Small Group",
+            "minSeats": 18,
+            "maxSeats": 36
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_type": "Small Group",
+            "minSeats": 16,
+            "maxSeats": 35
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_type": "TBD",
+            "minSeats": 32,
+            "maxSeats": 32
+        },
+        {
+            "rooms_shortname": "MCML",
+            "rooms_type": "Small Group",
+            "minSeats": 24,
+            "maxSeats": 32
+        },
+        {
+            "rooms_shortname": "BUCH",
+            "rooms_type": "Small Group",
+            "minSeats": 18,
+            "maxSeats": 32
+        },
+        {
+            "rooms_shortname": "UCLL",
+            "rooms_type": "Studio Lab",
+            "minSeats": 30,
+            "maxSeats": 30
+        },
+        {
+            "rooms_shortname": "SPPH",
+            "rooms_type": "Small Group",
+            "minSeats": 12,
+            "maxSeats": 30
+        },
+        {
+            "rooms_shortname": "WOOD",
+            "rooms_type": "Small Group",
+            "minSeats": 12,
+            "maxSeats": 30
+        },
+        {
+            "rooms_shortname": "UCLL",
+            "rooms_type": "Small Group",
+            "minSeats": 30,
+            "maxSeats": 30
+        },
+        {
+            "rooms_shortname": "FNH",
+            "rooms_type": "Small Group",
+            "minSeats": 12,
+            "maxSeats": 28
+        },
+        {
+            "rooms_shortname": "SWNG",
+            "rooms_type": "Small Group",
+            "minSeats": 27,
+            "maxSeats": 27
+        },
+        {
+            "rooms_shortname": "CEME",
+            "rooms_type": "Small Group",
+            "minSeats": 22,
+            "maxSeats": 26
+        },
+        {
+            "rooms_shortname": "PCOH",
+            "rooms_type": "Small Group",
+            "minSeats": 24,
+            "maxSeats": 24
+        },
+        {
+            "rooms_shortname": "BRKX",
+            "rooms_type": "Open Design General Purpose",
+            "minSeats": 24,
+            "maxSeats": 24
+        },
+        {
+            "rooms_shortname": "AUDX",
+            "rooms_type": "Small Group",
+            "minSeats": 20,
+            "maxSeats": 21
+        },
+        {
+            "rooms_shortname": "LASR",
+            "rooms_type": "Small Group",
+            "minSeats": 20,
+            "maxSeats": 20
+        },
+        {
+            "rooms_shortname": "SOWK",
+            "rooms_type": "Small Group",
+            "minSeats": 12,
+            "maxSeats": 16
+        },
+        {
+            "rooms_shortname": "BIOL",
+            "rooms_type": "Small Group",
+            "minSeats": 16,
+            "maxSeats": 16
+        },
+        {
+            "rooms_shortname": "PHRM",
+            "rooms_type": "Small Group",
+            "minSeats": 14,
+            "maxSeats": 14
+        }
+    ]
+}

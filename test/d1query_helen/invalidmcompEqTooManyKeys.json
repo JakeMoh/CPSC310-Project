@@ -1,0 +1,22 @@
+{
+    "title": "mcomp eq 0 mkey year",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 20,
+                "courses_fail": 30
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+
+}

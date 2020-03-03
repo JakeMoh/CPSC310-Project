@@ -1,0 +1,627 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "crwr"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "sumPass",
+                "sumFail"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "sumPass",
+                    "sumFail"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_avg"
+            ],
+            "APPLY": [
+                {
+                    "sumPass": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "sumFail": {
+                        "SUM": "courses_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "sumPass": 1,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 2,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 2,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 2,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 3,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 3,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 3,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 3,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 3,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 4,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 5,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 5,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 6,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 6,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 6,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 7,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 8,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 10,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 10,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 13,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 15,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 16,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 18,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 18,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 20,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 24,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 24,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 30,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 30,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 35,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 36,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 36,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 41,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 53,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 60,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 61,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 66,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 78,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 79,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 79,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 80,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 80,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 82,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 82,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 86,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 86,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 91,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 92,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 93,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 94,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 94,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 97,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 99,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 99,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 101,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 101,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 102,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 103,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 103,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 110,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 112,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 113,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 115,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 117,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 120,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 121,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 129,
+            "sumFail": 5
+        },
+        {
+            "sumPass": 131,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 134,
+            "sumFail": 8
+        },
+        {
+            "sumPass": 136,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 139,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 143,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 143,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 144,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 147,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 148,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 148,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 154,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 158,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 160,
+            "sumFail": 9
+        },
+        {
+            "sumPass": 161,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 162,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 164,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 164,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 168,
+            "sumFail": 8
+        },
+        {
+            "sumPass": 170,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 172,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 172,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 172,
+            "sumFail": 7
+        },
+        {
+            "sumPass": 176,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 176,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 176,
+            "sumFail": 8
+        },
+        {
+            "sumPass": 178,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 178,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 182,
+            "sumFail": 1
+        },
+        {
+            "sumPass": 187,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 188,
+            "sumFail": 12
+        },
+        {
+            "sumPass": 192,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 193,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 193,
+            "sumFail": 7
+        },
+        {
+            "sumPass": 199,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 200,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 202,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 206,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 207,
+            "sumFail": 5
+        },
+        {
+            "sumPass": 208,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 208,
+            "sumFail": 8
+        },
+        {
+            "sumPass": 211,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 216,
+            "sumFail": 11
+        },
+        {
+            "sumPass": 218,
+            "sumFail": 0
+        },
+        {
+            "sumPass": 218,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 218,
+            "sumFail": 5
+        },
+        {
+            "sumPass": 230,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 239,
+            "sumFail": 7
+        },
+        {
+            "sumPass": 240,
+            "sumFail": 5
+        },
+        {
+            "sumPass": 240,
+            "sumFail": 14
+        },
+        {
+            "sumPass": 243,
+            "sumFail": 5
+        },
+        {
+            "sumPass": 249,
+            "sumFail": 9
+        },
+        {
+            "sumPass": 254,
+            "sumFail": 10
+        },
+        {
+            "sumPass": 259,
+            "sumFail": 7
+        },
+        {
+            "sumPass": 262,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 265,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 269,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 270,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 278,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 281,
+            "sumFail": 13
+        },
+        {
+            "sumPass": 282,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 287,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 315,
+            "sumFail": 3
+        },
+        {
+            "sumPass": 317,
+            "sumFail": 2
+        },
+        {
+            "sumPass": 346,
+            "sumFail": 8
+        },
+        {
+            "sumPass": 348,
+            "sumFail": 10
+        },
+        {
+            "sumPass": 350,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 361,
+            "sumFail": 5
+        },
+        {
+            "sumPass": 364,
+            "sumFail": 14
+        },
+        {
+            "sumPass": 365,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 380,
+            "sumFail": 8
+        },
+        {
+            "sumPass": 387,
+            "sumFail": 6
+        },
+        {
+            "sumPass": 428,
+            "sumFail": 4
+        },
+        {
+            "sumPass": 442,
+            "sumFail": 7
+        },
+        {
+            "sumPass": 491,
+            "sumFail": 7
+        },
+        {
+            "sumPass": 663,
+            "sumFail": 12
+        },
+        {
+            "sumPass": 836,
+            "sumFail": 20
+        },
+        {
+            "sumPass": 871,
+            "sumFail": 15
+        },
+        {
+            "sumPass": 915,
+            "sumFail": 24
+        },
+        {
+            "sumPass": 1111,
+            "sumFail": 16
+        }
+    ]
+}

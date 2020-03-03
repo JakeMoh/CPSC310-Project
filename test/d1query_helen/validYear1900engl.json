@@ -1,0 +1,30 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "95219"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_uuid": "95219",
+            "courses_avg": 71.71,
+            "courses_year": 1900
+        }
+    ]
+}

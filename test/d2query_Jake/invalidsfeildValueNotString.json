@@ -1,0 +1,26 @@
+{
+    "title": "D2 Query Invalid",
+    "query":  {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "rooms_seats": 300
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_shortname": 123
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

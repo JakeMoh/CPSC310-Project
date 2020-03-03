@@ -1,0 +1,100 @@
+{
+    "title": "valid Mcomparator is LT",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*crwr*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_year": 2015
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50503",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50504",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50505",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50507",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50509",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50511",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50513",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50515",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50517",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50519",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50520",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50521",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50523",
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_uuid": "50569",
+            "courses_year": 2016
+        }
+    ]
+}
+

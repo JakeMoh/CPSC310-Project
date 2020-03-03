@@ -1,0 +1,17 @@
+{
+    "title": "",
+    "query": {
+        "WHERE": {
+            "AND": [
+                123
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

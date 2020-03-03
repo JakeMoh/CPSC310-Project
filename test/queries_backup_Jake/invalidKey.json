@@ -1,0 +1,17 @@
+{
+    "title": "",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "1": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

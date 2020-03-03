@@ -1,0 +1,20 @@
+{
+    "title": "scomp star in front and end of string",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courses_uuid": "1231*"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_id",
+            "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"japn","courses_id":"151","courses_avg":66.55},{"courses_dept":"japn","courses_id":"150","courses_avg":69.91},{"courses_dept":"japn","courses_id":"210","courses_avg":70.42},{"courses_dept":"japn","courses_id":"151","courses_avg":71.23},{"courses_dept":"japn","courses_id":"151","courses_avg":71.29},{"courses_dept":"japn","courses_id":"150","courses_avg":73.47},{"courses_dept":"japn","courses_id":"150","courses_avg":74.44},{"courses_dept":"japn","courses_id":"210","courses_avg":75.44},{"courses_dept":"japn","courses_id":"150","courses_avg":76.6},{"courses_dept":"japn","courses_id":"151","courses_avg":77.47}]
+}

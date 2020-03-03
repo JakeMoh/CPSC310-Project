@@ -1,0 +1,145 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 240
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_lon",
+                "rooms_lat",
+                "min",
+                "max"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "min"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_lon",
+                "rooms_lat"
+            ],
+            "APPLY": [
+                {
+                    "min": {
+                        "MIN": "rooms_seats"
+                    }
+                },
+                {
+                    "max": {
+                        "MAX": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "WOOD",
+            "rooms_lon": -123.24673,
+            "rooms_lat": 49.26478,
+            "min": 503,
+            "max": 503
+        },
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_lon": -123.24467,
+            "rooms_lat": 49.26047,
+            "min": 442,
+            "max": 442
+        },
+        {
+            "rooms_shortname": "CIRS",
+            "rooms_lon": -123.25314,
+            "rooms_lat": 49.26207,
+            "min": 426,
+            "max": 426
+        },
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_lon": -123.25165,
+            "rooms_lat": 49.2661,
+            "min": 375,
+            "max": 375
+        },
+        {
+            "rooms_shortname": "ESB",
+            "rooms_lon": -123.25224,
+            "rooms_lat": 49.26274,
+            "min": 350,
+            "max": 350
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_lon": -123.24494,
+            "rooms_lat": 49.26236,
+            "min": 350,
+            "max": 350
+        },
+        {
+            "rooms_shortname": "WESB",
+            "rooms_lon": -123.24937,
+            "rooms_lat": 49.26517,
+            "min": 325,
+            "max": 325
+        },
+        {
+            "rooms_shortname": "SRC",
+            "rooms_lon": -123.24894,
+            "rooms_lat": 49.2683,
+            "min": 299,
+            "max": 299
+        },
+        {
+            "rooms_shortname": "SCRF",
+            "rooms_lon": -123.2531,
+            "rooms_lat": 49.26398,
+            "min": 280,
+            "max": 280
+        },
+        {
+            "rooms_shortname": "BUCH",
+            "rooms_lon": -123.25468,
+            "rooms_lat": 49.26826,
+            "min": 275,
+            "max": 275
+        },
+        {
+            "rooms_shortname": "CHEM",
+            "rooms_lon": -123.25308,
+            "rooms_lat": 49.2659,
+            "min": 265,
+            "max": 265
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_lon": -123.25364,
+            "rooms_lat": 49.26486,
+            "min": 260,
+            "max": 260
+        },
+        {
+            "rooms_shortname": "HENN",
+            "rooms_lon": -123.25374,
+            "rooms_lat": 49.26627,
+            "min": 257,
+            "max": 257
+        },
+        {
+            "rooms_shortname": "FSC",
+            "rooms_lon": -123.24886,
+            "rooms_lat": 49.26044,
+            "min": 250,
+            "max": 250
+        }
+    ]
+}

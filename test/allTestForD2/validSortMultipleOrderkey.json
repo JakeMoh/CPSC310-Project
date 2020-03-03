@@ -1,0 +1,252 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 240
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_seats",
+                "rooms_number",
+                "rooms_lon",
+                "rooms_lat",
+                "min",
+                "max",
+                "sumLon",
+                "sumLat"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "min",
+                    "max",
+                    "rooms_seats"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_lon",
+                "rooms_lat",
+                "rooms_number",
+                "rooms_seats"
+            ],
+            "APPLY": [
+                {
+                    "min": {
+                        "MIN": "rooms_seats"
+                    }
+                },
+                {
+                    "max": {
+                        "MAX": "rooms_seats"
+                    }
+                },
+                {
+                    "sumLon": {
+                        "SUM": "rooms_lon"
+                    }
+                },
+                {
+                    "sumLat": {
+                        "SUM": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "FSC",
+            "rooms_seats": 250,
+            "rooms_number": "1005",
+            "rooms_lon": -123.24886,
+            "rooms_lat": 49.26044,
+            "min": 250,
+            "max": 250,
+            "sumLon": -123.25,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "HENN",
+            "rooms_seats": 257,
+            "rooms_number": "200",
+            "rooms_lon": -123.25374,
+            "rooms_lat": 49.26627,
+            "min": 257,
+            "max": 257,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "ANGU",
+            "rooms_seats": 260,
+            "rooms_number": "098",
+            "rooms_lon": -123.25364,
+            "rooms_lat": 49.26486,
+            "min": 260,
+            "max": 260,
+            "sumLon": -123.25,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "CHEM",
+            "rooms_seats": 265,
+            "rooms_number": "B150",
+            "rooms_lon": -123.25308,
+            "rooms_lat": 49.2659,
+            "min": 265,
+            "max": 265,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "BUCH",
+            "rooms_seats": 275,
+            "rooms_number": "A101",
+            "rooms_lon": -123.25468,
+            "rooms_lat": 49.26826,
+            "min": 275,
+            "max": 275,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "SCRF",
+            "rooms_seats": 280,
+            "rooms_number": "100",
+            "rooms_lon": -123.2531,
+            "rooms_lat": 49.26398,
+            "min": 280,
+            "max": 280,
+            "sumLon": -123.25,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "SRC",
+            "rooms_seats": 299,
+            "rooms_number": "220C",
+            "rooms_lon": -123.24894,
+            "rooms_lat": 49.2683,
+            "min": 299,
+            "max": 299,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "SRC",
+            "rooms_seats": 299,
+            "rooms_number": "220B",
+            "rooms_lon": -123.24894,
+            "rooms_lat": 49.2683,
+            "min": 299,
+            "max": 299,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "SRC",
+            "rooms_seats": 299,
+            "rooms_number": "220A",
+            "rooms_lon": -123.24894,
+            "rooms_lat": 49.2683,
+            "min": 299,
+            "max": 299,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "WESB",
+            "rooms_seats": 325,
+            "rooms_number": "100",
+            "rooms_lon": -123.24937,
+            "rooms_lat": 49.26517,
+            "min": 325,
+            "max": 325,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "ESB",
+            "rooms_seats": 350,
+            "rooms_number": "1013",
+            "rooms_lon": -123.25224,
+            "rooms_lat": 49.26274,
+            "min": 350,
+            "max": 350,
+            "sumLon": -123.25,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_seats": 350,
+            "rooms_number": "1001",
+            "rooms_lon": -123.24494,
+            "rooms_lat": 49.26236,
+            "min": 350,
+            "max": 350,
+            "sumLon": -123.24,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_seats": 350,
+            "rooms_number": "1002",
+            "rooms_lon": -123.24494,
+            "rooms_lat": 49.26236,
+            "min": 350,
+            "max": 350,
+            "sumLon": -123.24,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_seats": 375,
+            "rooms_number": "100",
+            "rooms_lon": -123.25165,
+            "rooms_lat": 49.2661,
+            "min": 375,
+            "max": 375,
+            "sumLon": -123.25,
+            "sumLat": 49.27
+        },
+        {
+            "rooms_shortname": "CIRS",
+            "rooms_seats": 426,
+            "rooms_number": "1250",
+            "rooms_lon": -123.25314,
+            "rooms_lat": 49.26207,
+            "min": 426,
+            "max": 426,
+            "sumLon": -123.25,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_seats": 442,
+            "rooms_number": "A",
+            "rooms_lon": -123.24467,
+            "rooms_lat": 49.26047,
+            "min": 442,
+            "max": 442,
+            "sumLon": -123.24,
+            "sumLat": 49.26
+        },
+        {
+            "rooms_shortname": "WOOD",
+            "rooms_seats": 503,
+            "rooms_number": "2",
+            "rooms_lon": -123.24673,
+            "rooms_lat": 49.26478,
+            "min": 503,
+            "max": 503,
+            "sumLon": -123.25,
+            "sumLat": 49.26
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "title": "invalid columns is empty",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

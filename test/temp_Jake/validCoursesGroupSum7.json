@@ -1,0 +1,143 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "sum1",
+                "sum2",
+                "sum3",
+                "sum4",
+                "sum5"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "sum1": {
+                        "SUM": "courses_avg"
+                    }
+                },
+                {
+                    "sum2": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "sum3": {
+                        "SUM": "courses_fail"
+                    }
+                },
+                {
+                    "sum4": {
+                        "SUM": "courses_audit"
+                    }
+                },
+                {
+                    "sum5": {
+                        "SUM": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_instructor": "cox, daniel",
+            "sum1": 99.19,
+            "sum2": 16,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 99.19
+        },
+        {
+            "courses_instructor": "coria, lino",
+            "sum1": 98.75,
+            "sum2": 12,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 98.75
+        },
+        {
+            "courses_instructor": "",
+            "sum1": 1184.24,
+            "sum2": 245,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 1184.24
+        },
+        {
+            "courses_instructor": "cole, kenneth",
+            "sum1": 196.78,
+            "sum2": 22,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 196.78
+        },
+        {
+            "courses_instructor": "grow, laura",
+            "sum1": 296.14,
+            "sum2": 66,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 296.14
+        },
+        {
+            "courses_instructor": "cannon, joanna",
+            "sum1": 98.45,
+            "sum2": 11,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 98.45
+        },
+        {
+            "courses_instructor": "gomez, jose",
+            "sum1": 99.78,
+            "sum2": 9,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 99.78
+        },
+        {
+            "courses_instructor": "brew, nancy",
+            "sum1": 98.71,
+            "sum2": 14,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 98.71
+        },
+        {
+            "courses_instructor": "krist, jennifer",
+            "sum1": 98.21,
+            "sum2": 14,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 98.21
+        },
+        {
+            "courses_instructor": "burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth",
+            "sum1": 98.5,
+            "sum2": 16,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 98.5
+        },
+        {
+            "courses_instructor": "frank, erica",
+            "sum1": 98.98,
+            "sum2": 82,
+            "sum3": 0,
+            "sum4": 0,
+            "sum5": 98.98
+        }
+    ]
+}

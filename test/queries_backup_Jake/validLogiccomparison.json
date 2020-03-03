@@ -1,0 +1,126 @@
+{
+    "title": "valid logic comparison just one",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "*600*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "arst",
+                "courses_id": "600",
+                "courses_avg": 85.75
+            },
+            {
+                "courses_dept": "arst",
+                "courses_id": "600",
+                "courses_avg": 85.75
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 82.31
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 82.31
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 77.85
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 77.85
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 83.52
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 83.52
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 81.1
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 81.1
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 75.82
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 75.82
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 79.75
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 79.75
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 88.4
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 88.4
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 87
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 87
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 86.25
+            },
+            {
+                "courses_dept": "econ",
+                "courses_id": "600",
+                "courses_avg": 86.25
+            }
+        ]
+    }
+}

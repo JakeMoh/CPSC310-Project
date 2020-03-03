@@ -1,0 +1,48 @@
+{
+    "title": "valid sfield instructor",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_instructor": "*biermann, wilhelmina georgina*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "engl",
+            "courses_id": "321",
+            "courses_avg": 89.68,
+            "courses_instructor": "biermann, wilhelmina georgina",
+            "courses_title": "traditnl grammar",
+            "courses_uuid": "18844"
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "321",
+            "courses_avg": 87.11,
+            "courses_instructor": "biermann, wilhelmina georgina",
+            "courses_title": "traditnl grammar",
+            "courses_uuid": "57190"
+        }
+    ]
+}

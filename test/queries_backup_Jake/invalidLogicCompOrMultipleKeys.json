@@ -1,0 +1,24 @@
+{
+    "title": "",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    },
+                    "GT": {
+                        "courses_avg": 123
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

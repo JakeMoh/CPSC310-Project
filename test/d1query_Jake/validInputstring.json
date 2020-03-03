@@ -1,0 +1,54 @@
+{
+    "title": "valid inputstring two *",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*engl*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "engl",
+            "courses_id": "225",
+            "courses_avg": 88.65
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "301",
+            "courses_avg": 87.6
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "321",
+            "courses_avg": 89.68
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "321",
+            "courses_avg": 87.11
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "489",
+            "courses_avg": 87.38
+        }
+    ]
+}

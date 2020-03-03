@@ -1,0 +1,17 @@
+{
+    "title": "invalid body",
+    "query": {
+        "WHERE": {
+            "AA": {
+
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

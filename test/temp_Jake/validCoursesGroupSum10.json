@@ -1,0 +1,67 @@
+{
+    "title": "D2 Query Valid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "sum"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "sum": {
+                        "SUM": "courses_pass"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_title": "career planning",
+            "sum": 16
+        },
+        {
+            "courses_title": "multimedia sys",
+            "sum": 24
+        },
+        {
+            "courses_title": "assess lrn diffi",
+            "sum": 44
+        },
+        {
+            "courses_title": "educ stds autism",
+            "sum": 107
+        },
+        {
+            "courses_title": "dev el sk df&hrd",
+            "sum": 22
+        },
+        {
+            "courses_title": "algb topology i",
+            "sum": 18
+        },
+        {
+            "courses_title": "cl pro prim care",
+            "sum": 56
+        },
+        {
+            "courses_title": "fam nrs pract",
+            "sum": 56
+        },
+        {
+            "courses_title": "work int health",
+            "sum": 164
+        }
+    ]
+}

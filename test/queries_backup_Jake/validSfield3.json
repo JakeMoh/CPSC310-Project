@@ -1,0 +1,43 @@
+{
+    "title": "valid sfield uuid",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_uuid": "41559"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 87
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": {
+        "result": [
+            {
+                "courses_dept": "engl",
+                "courses_id": "301",
+                "courses_avg": 87.6,
+                "courses_instructor": "slemon, jane c",
+                "courses_title": "tech writing",
+                "courses_uuid": "41559"
+            }
+        ]
+    }
+}
+

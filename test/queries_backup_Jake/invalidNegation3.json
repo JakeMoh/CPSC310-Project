@@ -1,0 +1,21 @@
+{
+    "title": "invalid negation",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "ASDF": {
+                    "courses_avg": 85
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
